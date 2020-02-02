@@ -60,32 +60,32 @@ body {
   text-emphasis: none;
 }
 
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
 }
 
-#clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: var(--black);
-	display: inline-block;
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: var(--black);
+  display: inline-block;
 }
 
-#clockdiv div > span{
-	padding: 15px;
-	border-radius: 3px;
-	background: var(--black);
-	display: inline-block;
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: var(--black);
+  display: inline-block;
 }
 
-.smalltext{
-	padding-top: 5px;
-	font-size: 16px;
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
 }
 /* REGISTER BUTTON */
 .register {
@@ -102,7 +102,10 @@ body {
   text-decoration: none;
   font-family: "GlacialIndifferenceRegular";
 }
-
+.register:hover {
+  background-color: var(--white);
+  text-decoration: none;
+}
 
 /* LANDING PAGE IMAGES */
 .intro {
@@ -112,11 +115,9 @@ body {
   align-items: center;
   background-color: var(--black);
 }
-.intro img{
+.intro img {
   width: 50%;
-
 }
-
 
 /* TYPING EFFECT TEXT */
 .typewriter {
@@ -191,7 +192,7 @@ body {
     height: 20%;
   }
 
-  .typewriter{
+  .typewriter {
     font-size: 20px;
   }
   button > span {
