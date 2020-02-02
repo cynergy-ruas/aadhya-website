@@ -5,11 +5,7 @@
   --green-color: #50d890;
   --white-color: #e5e5e5;
 }
-/* font */
-@font-face {
-  font-family: "glacial";
-  src: url("/assets/fonts/GlacialIndifference-Regular.otf");
-}
+
 /* css */
 body {
   margin: 0;
@@ -27,7 +23,7 @@ button {
   font-size: larger;
   font-weight: 800;
   text-decoration: none;
-  font-family: glacial;
+  font-family: GlacialIndifferenceRegular;
 }
 .intro {
   display: flex;
@@ -54,7 +50,7 @@ button {
   width: 30%;
   color: var(--white-color);
   margin: auto;
-  font-family: glacial;
+  font-family: GlacialIndifferenceRegular;
 }
 /* navbar */
 .nav {
@@ -76,7 +72,7 @@ button {
   padding: 22px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: glacial;
+  font-family: GlacialIndifferenceRegular;
 }
 a:hover {
   text-decoration: underline;
