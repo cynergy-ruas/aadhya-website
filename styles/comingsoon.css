@@ -1,0 +1,23 @@
+/* ASSINGING COLOR VARS AND FONT FAMILY */
+:root {
+  --black: #272727;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+
+body {
+  background-color: var(--black);
+  text-align: center;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10em;
+  transform: translateY(50%);
+}
+
+* {
+  color: var(--white);
+  text-decoration: none;
+}

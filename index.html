@@ -1,48 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+  <!-- HEAD  -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" />
+
+  
+  
+    <!-- CSS AND OTHER BOOTSTRAP LINKS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    
+    <!-- FONT CDN -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/> 
+    
+    <!-- LINKED CSS -->
     <link
       rel="stylesheet"
-      media="screen"
-      href="https://fontlibrary.org/face/glacial-indifference"
-      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
     />
-    <title>Aadhya</title>
-  </head>
-  <body>
-    <!-- navbar -->
-    <div class="navbar">
-      <ul class="nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">events</a></li>
-        <li><a href="#">guests</a></li>
-        <li><a href="#">flagship</a></li>
-        <li><a href="#">collaborations</a></li>
-        <li><a href="#">faq</a></li>
-        <li><a href="#">find us</a></li>
-      </ul>
-    </div>
 
-    <!-- landing-page -->
-    <div class="landing-page">
-      <div class="register-btn">
-        <button>Register</button>
-      </div>
-      <div class="intro">
-        <img src="assets/Group 1.png" alt="logo" />
-        <img src="assets/Group 2.png" alt="days" />
-      </div>
-      <div class="subtitle">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer.
-        </p>
-      </div>
+    <!-- TITLE  -->
+    <title>Document</title>
+  </head>
+
+
+
+
+  <!-- BODY CONTENT -->
+  <body style="margin:0;">  
+   
+   <!-- LOADER!! DO NOT DELETE!!! -->
+    <div id="myDiv" >
+
+
+
+    <!-- NAVBAR      -->
+    <nav
+      class="navbar nav-masthead  navbar-expand-sm fixed-bottom animate-bottom"
+    >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarLg">
+        <span class="navbar-toggler-icon" ><img src="assets/hamburger.png" alt="" width="100%"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbarLg">
+      <ul class="navbar-nav nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="components/comingsoon.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components/comingsoon.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components/comingsoon.html">Guests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components/comingsoon.html">Flagship</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components/comingsoon.html">Collaborations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components/comingsoon.html">Faq</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="components/comingsoon.html">Find us</a>
+        </li>
+        <li class="nav-item"></li>
+      </ul>
+    </nav>
+
+  
+  
+  
+    <!-- LANDING PAGE -->
+        <!--REGISTER BUTTON  -->
+        <div class="register-btn animate-bottom"">
+        <button class="register"><span><a class="register-class" href="components/comingsoon.html">Register.</a></span></button>
+        </div>
+
+        <!-- INTRO (IMAGES)-->
+        <div class="intro">
+        <img src="assets/aadhya.png" alt="aadhya" />
+        <img src="assets/3days.png" alt="3days" />
+        </div>
+
+
+        <!-- TYPING EFFECT  -->
+        <div class="typewriter ">
+                <p class="typewriter">
+                    In <span class="animate-bottom"> &nbspVirtuosity </span> &nbspof<span class="animate-bottom">&nbspVeracity.</span>
+                </p>
+        </div>
+
+       
+
     </div>
+    
+    <!--SCRIPTS  -->
+    <script src="scripts/lottie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+
   </body>
 </html>
