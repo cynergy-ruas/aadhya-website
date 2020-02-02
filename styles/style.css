@@ -8,8 +8,7 @@
 
 /* BACKGROUND */
 *,
-body,
-html {
+body {
   background: var(--black);
   padding: 0;
   margin: 0;
@@ -61,46 +60,63 @@ html {
   text-emphasis: none;
 }
 
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: var(--black);
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: var(--black);
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
 /* REGISTER BUTTON */
 .register {
   display: inline-block;
-  text-emphasis: underline;
   margin: auto;
   padding: 16px 24px 17px;
-  background-color: var(--white);
+  background-color: var(--blue);
   border: none;
-  color: var(--black-color);
+  color: var(--white);
+  text-decoration: none;
   outline: none;
   font-size: larger;
   font-weight: 800;
   text-decoration: none;
   font-family: "GlacialIndifferenceRegular";
 }
-.register-class {
-  color: var(--black);
-  text-emphasis: none;
-}
 
-button > span {
-  text-decoration: underline;
-  color: var(--black);
-  background-color: var(--white);
-}
 
 /* LANDING PAGE IMAGES */
 .intro {
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--black);
 }
+.intro img{
+  width: 50%;
 
-.intro img {
-  display: inline-block;
-  position: relative;
-  top: 100px;
 }
+
 
 /* TYPING EFFECT TEXT */
 .typewriter {
@@ -114,9 +130,8 @@ button > span {
   color: var(--blue);
 }
 
-.typewriter p {
+.typewriter {
   position: relative;
-  top: 30vh;
   font-size: 30px;
   color: var(--white);
   text-align: center;
@@ -126,7 +141,7 @@ button > span {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
 
-  animation: typing 2s steps(40, end), blink-caret 0.5s infinite normal;
+  animation: typing 1.5s steps(40, end), blink-caret 0.5s infinite normal;
 }
 
 /* Add animation to "page content" */
@@ -176,6 +191,9 @@ button > span {
     height: 20%;
   }
 
+  .typewriter{
+    font-size: 20px;
+  }
   button > span {
     text-decoration: none;
     color: var(--black);
