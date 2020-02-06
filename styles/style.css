@@ -1,6 +1,6 @@
 /* ASSINGING COLOR VARS AND FONT FAMILY */
 :root {
-  --black: #272727;
+  --black: #070507;
   --white: #e5e5e5;
   --blue: #1089ff;
   --green: #50d890;
@@ -29,6 +29,7 @@ body {
 .navbar-expand-sm,
 .nav-masthead {
   display: flex !important;
+  padding: 0 !important;
   justify-content: center !important;
   align-items: center !important;
 }
@@ -36,9 +37,12 @@ body {
   justify-content: center;
 }
 .nav-masthead .nav-link {
+  text-align: center;
   font-weight: 48;
+  font-size: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: transparent !important;
   color: var(--white);
-  background-color: transparent;
   font-family: "GlacialIndifferenceRegular";
 }
 
@@ -53,11 +57,13 @@ body {
 }
 
 .navbar-toggler-icon {
-  background: var(--white) !important;
+  background: var(--black) !important;
 }
 
 .navbar-toggler {
   text-emphasis: none;
+  outline: none !important;
+  background: transparent !important;
 }
 
 #clockdiv {
