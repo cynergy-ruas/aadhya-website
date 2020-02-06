@@ -19,6 +19,11 @@ var animation = bodymovin.loadAnimation({
   path: "assets/data.json"
 });
 
+//cursor parallax
+$(".data-tilt").tilt({
+  //enter and edit properties to change 3D effect. -- source tilt.js
+});
+
 // NAVBAR ONCLICK BLUE
 $(document).ready(function() {
   $(".nav-link").click(function() {
