@@ -1,7 +1,5 @@
 //LOADER
-$("body").append(
-  '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
-);
+$("body").append('<div id="loadingDiv"><div class="loader"></div></div>');
 $(window).on("load", function() {
   setTimeout(showPage, 3000); //wait for page load PLUS two seconds.
 });
