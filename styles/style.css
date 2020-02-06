@@ -40,7 +40,7 @@ body {
   text-align: center;
   font-weight: 48;
   font-size: 1.5rem;
-  padding-right: 1.5rem;
+  padding-right: 5rem !important;
   background-color: transparent !important;
   color: var(--white);
   font-family: "GlacialIndifferenceRegular";
