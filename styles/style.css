@@ -158,6 +158,9 @@ body {
   align-items: center;
   background-color: var(--black);
 }
+#audio-btn {
+  width: 10% !important;
+}
 .intro img {
   width: 50%;
 }
@@ -230,7 +233,7 @@ body {
     padding-top: 10em !important;
   }
   #audio-btn {
-    width: 10%;
+    width: 10% !important;
   }
   .intro {
     flex-direction: column;
