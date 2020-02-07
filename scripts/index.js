@@ -29,12 +29,6 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
   //remove loader
   $("#loadingDiv").remove();
-  //plays audio when page loads
-  document.getElementById("myAudio").play();
-  //play aadhya animation when page loads
-  logo_animation.play();
-  //play speaker animation when page loads
-  speaker_anim.play();
 }
 
 //loader animation template.
