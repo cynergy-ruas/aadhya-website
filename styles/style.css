@@ -6,6 +6,19 @@
   --green: #50d890;
 }
 
+@font-face {
+  font-family: ig-regular;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+
 /* BACKGROUND */
 *,
 body {
@@ -41,7 +54,7 @@ body {
   font-size: 1.25rem;
   background-color: transparent !important;
   color: var(--white);
-  font-family: "GlacialIndifferenceRegular";
+  font-family: "ig-regular";
 }
 
 .nav-link:hover {
@@ -116,7 +129,7 @@ body {
   font-size: larger;
   font-weight: 800;
   text-decoration: none;
-  font-family: "GlacialIndifferenceRegular";
+  font-family: "ig-regular";
 }
 .register:hover {
   background-color: var(--white);
@@ -140,11 +153,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   border-color: var(--black);
+  background-color: transparent !important;
   align-items: center;
   justify-content: center;
 }
 .typewriter > span {
   color: var(--blue);
+  background-color: transparent !important;
 }
 
 .typewriter {
@@ -152,7 +167,7 @@ body {
   font-size: 30px;
   color: var(--white);
   text-align: center;
-  font-family: "GlacialIndifferenceRegular";
+  font-family: "ig-regular";
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */

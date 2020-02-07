@@ -5,7 +5,8 @@ $(window).on("load", function() {
 });
 
 function showPage() {
-  document.getElementById("loadingDiv").style.display = "none";
+  $("loadingDiv").fadeOut();
+  $("myDiv").fadeIn();
   document.getElementById("myDiv").style.display = "block";
   $("#loadingDiv").remove();
 }
