@@ -150,6 +150,9 @@ body {
   border: none;
   outline: none !important;
 }
+#audio-btn {
+  width: 80% !important;
+}
 /* LANDING PAGE IMAGES */
 .intro {
   display: flex;
@@ -158,9 +161,7 @@ body {
   align-items: center;
   background-color: var(--black);
 }
-#audio-btn {
-  width: 10% !important;
-}
+
 .intro img {
   width: 50%;
 }
@@ -232,9 +233,7 @@ body {
   #loadingDiv {
     padding-top: 10em !important;
   }
-  #audio-btn {
-    width: 10% !important;
-  }
+
   .intro {
     flex-direction: column;
     justify-content: space-evenly;

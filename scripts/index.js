@@ -57,6 +57,7 @@ function aud_play_pause() {
     //pause addhya animation
     logo_animation.pause();
     //unmute audio
+    myAudio.play();
     myAudio.muted = !myAudio.muted;
   }
 }
