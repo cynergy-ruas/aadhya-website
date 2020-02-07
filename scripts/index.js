@@ -1,13 +1,13 @@
 //LOADER
-$("body").append('<div id="loadingDiv"><div class="loader"></div></div>');
+$("body").append('<div  id="loadingDiv"><div class="loader"></div></div>');
 $(window).on("load", function() {
   setTimeout(showPage, 3000); //wait for page load PLUS two seconds.
 });
 
 function showPage() {
-  $("loadingDiv").fadeOut();
-  $("myDiv").fadeIn();
-  document.getElementById("myDiv").style.display = "block";
+  // $("loadingDiv").fadeOut();
+  // $("myDiv").fadeIn();
+  getElementById("myDiv").style.display = "block";
   $("#loadingDiv").remove();
 }
 var animation = bodymovin.loadAnimation({

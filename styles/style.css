@@ -29,9 +29,12 @@ body {
 
 /* LOADER */
 #loadingDiv {
+  margin: 0;
+  padding: 0;
   width: 100%;
   background-color: #070507;
 }
+
 /* NAVBAR */
 .navbar,
 .navbar-expand-sm,
@@ -212,6 +215,10 @@ body {
 
 /* RESPONSIVE MEDIA  */
 @media only screen and (max-width: 700px) {
+  #loadingDiv {
+    padding-top: 10em !important;
+  }
+
   .intro {
     flex-direction: column;
     justify-content: space-evenly;
