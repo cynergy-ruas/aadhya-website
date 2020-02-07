@@ -7,7 +7,7 @@ $(window).on("load", function() {
 function showPage() {
   // $("loadingDiv").fadeOut();
   // $("myDiv").fadeIn();
-  getElementById("myDiv").style.display = "block";
+  document.getElementById("myDiv").style.display = "block";
   $("#loadingDiv").remove();
 }
 var animation = bodymovin.loadAnimation({
