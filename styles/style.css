@@ -114,7 +114,7 @@ body {
   justify-content: center;
   background-color: transparent !important;
   height: 100%;
-  width: 80%;
+  width: 50%;
   transform-style: preserve-3d;
   transform: translateZ(50px);
 }
@@ -245,5 +245,27 @@ body {
     padding: auto auto auto;
     font-weight: 400;
     font-size: 15px;
+  }
+  .data-tilt {
+    width: 80%;
+  }
+  #clockdiv {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+  }
+
+  #clockdiv > div {
+    padding: 10px;
+  }
+
+  #clockdiv div > span {
+    padding: 10px;
+  }
+
+  .smalltext {
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
   }
 }

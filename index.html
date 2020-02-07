@@ -76,11 +76,19 @@
         <a class=" register register-class "
           href="components/comingsoon.html">register.</a>
     </div>
+    <!-- SOUND BUTTON -->
+    <audio id="myAudio" loop
+      <source src="assets/LogonSound/bgm.mp3"
+              type='audio/mp4'>
+      Your user agent does not support the HTML5 Audio element.
+    </audio>
+    <button type="button" onclick="aud_play_pause()">Play/Pause</button>
+
 
     <!-- INTRO (IMAGES)-->
     <div class="intro">
-      <div class="data-tilt animate-bottom" data-tilt>
-      <img src="assets/images/logo-04.svg" alt="aadhya_logo" width=100% />
+      <div id="logo" class="data-tilt animate-bottom" data-tilt>
+      <!-- <img src="assets/LogonSound/data.json" alt="aadhya_logo" width=100% /> -->
     </div>
       <div class="typewriter ">
         evolve.engage.<span class="animate-bottom">elevate</span>
