@@ -26,6 +26,9 @@ body {
   padding: 0;
   margin: 0;
 }
+body {
+  overflow: auto !important;
+}
 
 /* LOADER */
 #loadingDiv {
@@ -33,6 +36,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: #070507;
+  overflow: hidden !important ;
 }
 
 /* NAVBAR */
@@ -138,7 +142,14 @@ body {
   background-color: var(--white);
   text-decoration: none;
 }
-
+/* AUDIO BUTTON */
+.audio {
+  z-index: 2 !important;
+  margin: auto;
+  padding: 16px 24px 17px;
+  border: none;
+  outline: none !important;
+}
 /* LANDING PAGE IMAGES */
 .intro {
   display: flex;
@@ -256,7 +267,7 @@ body {
   }
 
   #clockdiv > div {
-    padding: 10px;
+    padding: 5px;
   }
 
   #clockdiv div > span {

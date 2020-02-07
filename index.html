@@ -10,8 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-
-
+  <!-- FAVICON  -->
+  <link rel="icon" href="favicon.png"  sizes="64x64">
   <!-- CSS AND OTHER BOOTSTRAP LINKS -->
   <link rel="stylesheet" href="styles/style.css" />
 
@@ -72,17 +72,23 @@
 
     <!-- LANDING PAGE -->
     <!--REGISTER BUTTON  -->
-    <div class="register-btn animate-bottom">
-        <a class=" register register-class "
-          href="components/comingsoon.html">register.</a>
+    <div class="top-buttons d-flex justify-content-between">
+      <div class="register-btn animate-bottom">
+          <a class=" register register-class "
+            href="components/comingsoon.html">register.</a>
+      </div>
+
+
+      <!-- SOUND BUTTON -->
+      <div  class="audio-btn ">
+      <audio id="myAudio" loop
+        <source src="assets/LogonSound/bgm.mp3"
+                type='audio/mp4'>
+        Your user agent does not support the HTML5 Audio element.
+        </audio>
+        <button class="audio" type="button" onclick="aud_play_pause()"><div id="audio-btn"> </button>
+      </div>
     </div>
-    <!-- SOUND BUTTON -->
-    <audio id="myAudio" loop
-      <source src="assets/LogonSound/bgm.mp3"
-              type='audio/mp4'>
-      Your user agent does not support the HTML5 Audio element.
-    </audio>
-    <button type="button" onclick="aud_play_pause()"><img src="assets/sound.json"alt=""></button>
 
 
     <!-- INTRO (IMAGES)-->
