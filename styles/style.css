@@ -229,7 +229,9 @@ body {
   #loadingDiv {
     padding-top: 10em !important;
   }
-
+  #audio-btn {
+    width: 10%;
+  }
   .intro {
     flex-direction: column;
     justify-content: space-evenly;
