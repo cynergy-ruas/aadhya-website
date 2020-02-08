@@ -1,0 +1,96 @@
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+
+@font-face {
+  font-family: ig-regular;
+  src: url(../../../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../../../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../../../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+/* Base */
+body {
+  line-height: 1.7;
+  color: #e5e5e5;
+  font-weight: 300;
+  font-size: 1.1rem;
+  font: "ig-regular";
+  background-color: var(--black);
+}
+#map {
+  border-radius: 2%;
+  height: 500px;
+  width: 80%;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: var(--white);
+}
+a:hover {
+  color: var(--green);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "ig-bold";
+}
+h5 {
+  font-weight: normal;
+}
+
+.social {
+  margin: auto;
+}
+.email-phone {
+  margin-top: 5%;
+}
+.blue {
+  color: var(--blue);
+}
+
+@media (min-width: 768px) {
+  .site-section {
+    padding: 2.5em 0;
+  }
+}
+.site-section {
+  padding: 4em 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+  font-weight: 900;
+  color: var(--blue);
+  max-width: 450px;
+}
+@media (max-width: 991.98px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .site-section {
+    padding: 2em 0;
+  }
+}
+.poc-img {
+  width: fit-content;
+  height: fit-content;
+}
+.poc-des {
+  margin: 5%;
+}
+.poc {
+  margin: 5% auto;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../styles/findus.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+
+    <title>Aadhya</title>
+  </head>
+  <body>
+    <nav
+      class="navbar nav-masthead navbar-expand-sm fixed-bottom animate-bottom"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsingNavbarLg"
+      >
+        <span class="navbar-toggler-icon"
+          ><img src="../assets/images/hamburger.png" alt="" width="100%"
+        /></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbarLg">
+        <ul class="navbar-nav nav">
+          <li class="nav-item">
+            <a class="nav-link" href="components/comingsoon.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="components/comingsoon.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="components/comingsoon.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="components/comingsoon.html">Guests</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="components/comingsoon.html">Flagship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="components/comingsoon.html"
+              >Collaborations</a
+            >
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="components/comingsoon.html">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="components/comingsoon.html"
+              >Find us</a
+            >
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="site-section" id="contact-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div id="map" class="col-md-5 order-2 order-md-2 mb-5 mb-md-0"></div>
+          <div class="col-md-6 mr-auto order-1 order-md-1">
+            <h2 class="section-title mb-3">Find Us</h2>
+            <p class="mb-5">
+              Natus totam voluptatibus animi aspernatur ducimus quas obcaecati
+              mollitia quibusdam temporibus culpa dolore molestias blanditiis
+              consequuntur sunt nisi.
+            </p>
+
+            <div class="row">
+              <span class="social">
+                <a href=""
+                  ><i class="fa fa-instagram fa-3x" aria-hidden="true"></i
+                ></a>
+              </span>
+              <span class="social">
+                <a href=""
+                  ><i
+                    class="fa fa-facebook-official fa-3x"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </span>
+              <span class="social">
+                <a href=""
+                  ><i class="fa fa-twitter fa-3x" aria-hidden="true"></i
+                ></a>
+              </span>
+              <span class="social">
+                <a href=""
+                  ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i
+                ></a>
+              </span>
+            </div>
+
+            <div class="email-phone row">
+              <div class="col-md-12">
+                <a href="mailto:aadhyaruas@gmail.com"
+                  ><h5>
+                    <span class="blue">Email : </span> aadhya-ruas@gmail.com
+                  </h5></a
+                >
+                <a href="tel: 987654321"
+                  ><h5><span class="blue">Phone :</span> 987654321</h5></a
+                >
+              </div>
+            </div>
+
+            <div class="poc row">
+              <span>
+                <img
+                  class="poc-img"
+                  src="https://image.flaticon.com/icons/svg/145/145862.svg"
+                  alt=""
+                />
+              </span>
+              <span class="poc-des">
+                <h5><span class="blue">Name:</span> rick sanchez</h5>
+                <h5>Co-ordinator</h5>
+                <h5><span class="blue">Contact:</span> 959595995</h5>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+
+    <!-- script for map -->
+    <script>
+      function initMap() {
+        var ruas = { lat: 13.0183642, lng: 77.5078933 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 20,
+          center: ruas
+        });
+        var marker = new google.maps.Marker({
+          position: ruas,
+          map: map
+        });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key= 
+AIzaSyD-CASjBwKIYJG11VioXQFlWJmVCSB5aTY&callback=initMap"
+    ></script>
+
+    // social logo
+    <script src="https://use.fontawesome.com/fc49d836e8.js"></script>
+    // jquery
+    <script src="../scripts/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/jquery-ui.js"></script>
+
+    // bootstrap cdn
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    // nav js
+    <script src="../scripts/nav.js"></script>
+  </body>
+</html>

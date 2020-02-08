@@ -1,0 +1,80 @@
+/* ASSINGING COLOR VARS AND FONT FAMILY */
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+@font-face {
+  font-family: ig-regular;
+  src: url(../../../../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../../../../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../../../../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+
+/* NAVBAR */
+.navbar,
+.navbar-expand-sm,
+.nav-masthead {
+  display: flex !important;
+  padding: 0 !important;
+  background: var(--black);
+  justify-content: center !important;
+  align-items: center !important;
+}
+.navbar-collapse {
+  justify-content: center;
+}
+.nav-masthead .nav-link {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem !important;
+  padding-bottom: 0.5rem !important;
+  text-align: center;
+  font-weight: 48;
+  font-size: 1.25rem;
+  background-color: var(--black) !important;
+  color: var(--white);
+  font: "ig-regular";
+}
+
+.nav-link:hover {
+  border-bottom: 0.1rem solid var(--green);
+}
+
+.nav-link.active,
+.nav-link:focus {
+  color: var(--blue);
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background: var(--black) !important;
+}
+
+.navbar-toggler {
+  text-emphasis: none;
+  outline: none !important;
+  background: transparent !important;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+/* RESPONSIVE MEDIA  */
+@media only screen and (max-width: 700px) {
+  .nav-link {
+    padding-right: 3rem !important;
+  }
+  #map {
+    margin: 10%;
+  }
+}
