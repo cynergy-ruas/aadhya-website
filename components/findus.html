@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="../styles/findus.css" />
     <link rel="stylesheet" href="../styles/nav.css" />
 
+    <!--social logo-->
+    <script src="https://use.fontawesome.com/fc49d836e8.js"></script>
+
     <title>Aadhya</title>
   </head>
   <body>
@@ -33,16 +36,18 @@
       <div class="navbar-collapse collapse" id="collapsingNavbarLg">
         <ul class="navbar-nav nav">
           <li class="nav-item">
-            <a class="nav-link" href="components/comingsoon.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="components/comingsoon.html">About us</a>
+            <a class="nav-link" href="../components/comingsoon.html"
+              >About us</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="components/comingsoon.html">Events</a>
+            <a class="nav-link" href="../components/comingsoon.html">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="components/comingsoon.html">Guests</a>
+            <a class="nav-link" href="../components/comingsoon.html">Guests</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="components/comingsoon.html">Flagship</a>
@@ -53,10 +58,10 @@
             >
           </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="components/comingsoon.html">Faq</a>
+            <a class="nav-link" href="../components/comingsoon.html">Faq</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="components/comingsoon.html"
+            <a class="nav-link active" href="../components/comingsoon.html"
               >Find us</a
             >
           </li>
@@ -79,12 +84,12 @@
 
             <div class="row">
               <span class="social">
-                <a href=""
+                <a href="https://www.instagram.com/aadhya_ruas/" target="_blank"
                   ><i class="fa fa-instagram fa-3x" aria-hidden="true"></i
                 ></a>
               </span>
               <span class="social">
-                <a href=""
+                <a href="https://www.facebook.com/ruasAadhya" target="_blank"
                   ><i
                     class="fa fa-facebook-official fa-3x"
                     aria-hidden="true"
@@ -92,12 +97,12 @@
                 ></a>
               </span>
               <span class="social">
-                <a href=""
+                <a href="" target="_blank"
                   ><i class="fa fa-twitter fa-3x" aria-hidden="true"></i
                 ></a>
               </span>
               <span class="social">
-                <a href=""
+                <a href="https://www.linkedin.com/in/aadhyaruas" target="_blank"
                   ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i
                 ></a>
               </span>
@@ -107,11 +112,11 @@
               <div class="col-md-12">
                 <a href="mailto:aadhyaruas@gmail.com"
                   ><h5>
-                    <span class="blue">Email : </span> aadhya-ruas@gmail.com
+                    <span class="blue">Email :</span> aadhya-ruas@gmail.com
                   </h5></a
                 >
-                <a href="tel: 987654321"
-                  ><h5><span class="blue">Phone :</span> 987654321</h5></a
+                <a href="tel:987654321"
+                  ><h5><span class="blue">Phone :</span> +91 9876543210</h5></a
                 >
               </div>
             </div>
@@ -125,9 +130,12 @@
                 />
               </span>
               <span class="poc-des">
-                <h5><span class="blue">Name:</span> rick sanchez</h5>
+                <h5><span class="blue">Name:</span> Rick Sanchez</h5>
                 <h5>Co-ordinator</h5>
-                <h5><span class="blue">Contact:</span> 959595995</h5>
+                <h5>
+                  <span class="blue">Contact:</span
+                  ><a href="tel:987654321"> +91 9876543210</a>
+                </h5>
               </span>
             </div>
           </div>
@@ -138,41 +146,25 @@
     <!-- scripts -->
 
     <!-- script for map -->
-    <script>
-      function initMap() {
-        var ruas = { lat: 13.0183642, lng: 77.5078933 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 20,
-          center: ruas
-        });
-        var marker = new google.maps.Marker({
-          position: ruas,
-          map: map
-        });
-      }
-    </script>
 
     <script
       async
       defer
-      src="https://maps.googleapis.com/maps/api/js?key= 
-AIzaSyD-CASjBwKIYJG11VioXQFlWJmVCSB5aTY&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-CASjBwKIYJG11VioXQFlWJmVCSB5aTY&callback=initMap"
     ></script>
-
-    // social logo
-    <script src="https://use.fontawesome.com/fc49d836e8.js"></script>
-    // jquery
+    <script src="../scripts/map.js"></script>
+    <!--jquery-->
     <script src="../scripts/jquery-3.3.1.min.js"></script>
     <script src="../scripts/jquery-ui.js"></script>
 
-    // bootstrap cdn
+    <!-- bootstrap cdn-->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
 
-    // nav js
+    <!--nav js-->
     <script src="../scripts/nav.js"></script>
   </body>
 </html>

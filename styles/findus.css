@@ -7,15 +7,15 @@
 
 @font-face {
   font-family: ig-regular;
-  src: url(../../../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
 }
 @font-face {
   font-family: ig-italic;
-  src: url(../../../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
 }
 @font-face {
   font-family: ig-bold;
-  src: url(../../../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
 /* Base */
 body {
@@ -44,7 +44,7 @@ a:hover {
 }
 
 h1 {
-  font-family: "ig-bold";
+  font-family: "ig-regular";
 }
 h5 {
   font-weight: normal;

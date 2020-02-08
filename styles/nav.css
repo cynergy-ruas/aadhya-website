@@ -7,15 +7,15 @@
 }
 @font-face {
   font-family: ig-regular;
-  src: url(../../../../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
 }
 @font-face {
   font-family: ig-italic;
-  src: url(../../../../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
 }
 @font-face {
   font-family: ig-bold;
-  src: url(../../../../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
 
 /* NAVBAR */
@@ -41,7 +41,7 @@
   font-size: 1.25rem;
   background-color: var(--black) !important;
   color: var(--white);
-  font: "ig-regular";
+  font-family: "ig-regular";
 }
 
 .nav-link:hover {
