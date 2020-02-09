@@ -5,3 +5,5 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 });
+
+//hamburger animation
