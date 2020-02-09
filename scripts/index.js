@@ -20,7 +20,7 @@ var speaker_anim = bodymovin.loadAnimation({
 });
 
 //LOADER animation and loader remove
-$("body").append('<div  id="loadingDiv"><div class="loader"></div></div>');
+$("body").append('<div id="loader" ><div id="loadingDiv"></div></div>');
 $(window).on("load", function() {
   setTimeout(showPage, 3000); //wait for page load PLUS two seconds.
 });

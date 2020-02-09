@@ -32,11 +32,21 @@ body {
 }
 
 /* LOADER */
+#loader {
+  width: 100%;
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+
 #loadingDiv {
   margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #070507;
+  padding-top: 6em;
+  text-align: center;
+  width: 50% !important;
+  background-color: var(--black);
   overflow: hidden !important ;
 }
 
