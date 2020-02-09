@@ -27,7 +27,7 @@ body {
   margin: 0;
 }
 body {
-  overflow: auto !important;
+  overflow: visible !important;
 }
 
 /* LOADER */
@@ -55,6 +55,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem !important;
+  padding-top: 0rem !important;
   padding-bottom: 0.5rem !important;
   text-align: center;
   font-weight: 48;
@@ -121,6 +122,11 @@ body {
   width: 50%;
   transform-style: preserve-3d;
   transform: translateZ(50px);
+}
+@media only screen and (max-width: 1620 px) {
+  .data-tilt {
+    width: 40%;
+  }
 }
 /* REGISTER BUTTON */
 .register {
@@ -268,10 +274,12 @@ body {
     display: inline-block;
     text-align: center;
     padding: 5px;
+    font-size: 20px;
   }
 
   #clockdiv > div {
     padding: 5px;
+    font-size: 20px;
   }
 
   #clockdiv div > span {

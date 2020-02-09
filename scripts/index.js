@@ -43,6 +43,7 @@ var animation = bodymovin.loadAnimation({
 // SOUND MUTE BUTTON AND IT's complementing LOGO ANIMATION.
 function aud_play_pause() {
   var myAudio = document.getElementById("myAudio");
+  myAudio.play();
   //check if audio is muted or not
   if (myAudio.muted === true) {
     //play speaker button animation
@@ -51,13 +52,13 @@ function aud_play_pause() {
     myAudio.muted = !myAudio.muted;
     //play aadhya beating animation
     logo_animation.play();
-  } else if (myAudio.muted === false) {
+  } else {
     //reset speaker animation
     speaker_anim.goToAndStop(0);
     //pause addhya animation
     logo_animation.pause();
     //unmute audio
-    myAudio.play();
+
     myAudio.muted = !myAudio.muted;
   }
 }
