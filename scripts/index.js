@@ -4,7 +4,10 @@ var logo_animation = bodymovin.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: false,
-  path: "assets/LogonSound/logo.json"
+  path: "assets/LogonSound/logo.json",
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid meet"
+  }
 });
 
 // sound button animation template
