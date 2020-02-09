@@ -28,6 +28,7 @@ body {
 }
 body {
   overflow: visible !important;
+  font-family: 'ig-regular', Arial, Helvetica, sans-serif;
 }
 
 /* LOADER */
@@ -112,6 +113,15 @@ body {
 }
 #audio-btn {
   width: 30px !important;
+}
+.audio-btn-container{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.audio-btn-container>p{
+  color: var(--white);
+  
 }
 /* LANDING PAGE IMAGES */
 .intro {
