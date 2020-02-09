@@ -4,10 +4,7 @@ var logo_animation = bodymovin.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: false,
-  path: "assets/LogonSound/logo.json",
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid meet"
-  }
+  path: "assets/LogonSound/logo.json"
 });
 
 // sound button animation template
@@ -16,7 +13,10 @@ var speaker_anim = bodymovin.loadAnimation({
   renderer: "svg",
   loop: false,
   autoplay: false,
-  path: "assets/icons/speaker.json"
+  path: "assets/icons/speaker.json",
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid meet"
+  }
 });
 
 //LOADER animation and loader remove
