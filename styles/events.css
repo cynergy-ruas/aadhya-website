@@ -76,8 +76,6 @@ h6 {
 
 .extra {
   color: var(--green);
-  /* text-decoration: underline; */
-  border-bottom: thin solid var(--green);
 }
 
 .custom-owl-carousel .slide-one-item-alt {
