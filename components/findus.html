@@ -30,7 +30,7 @@
         data-target="#collapsingNavbarLg"
       >
         <span class="navbar-toggler-icon"
-          ><img src="../assets/images/hamburger.png" alt="" width="100%"
+          ><img id="hamburger" alt="" width="100%"
         /></span>
       </button>
       <div class="navbar-collapse collapse" id="collapsingNavbarLg">
@@ -71,35 +71,30 @@
         <div class="row align-items-center">
           <div id="map" class="col-md-5 order-2 order-md-2 mb-5 mb-md-0"></div>
           <div class="col-md-6 mr-auto order-1 order-md-1">
-            <h2 class="section-title mb-3">Find Us</h2>
+            <h1 class="section-title mb-3">find us</h1>
             <p class="mb-5">
-              Natus totam voluptatibus animi aspernatur ducimus quas obcaecati
-              mollitia quibusdam temporibus culpa dolore molestias blanditiis
-              consequuntur sunt nisi.
+              need a hand? or maybe a high five? <br />Here's how to reach us.
             </p>
 
             <div class="row">
               <span class="social">
                 <a href="https://www.instagram.com/aadhya_ruas/" target="_blank"
-                  ><i class="fa fa-instagram fa-3x" aria-hidden="true"></i
+                  ><i id="instagram"></i
                 ></a>
               </span>
               <span class="social">
                 <a href="https://www.facebook.com/ruasAadhya" target="_blank"
-                  ><i
-                    class="fa fa-facebook-official fa-3x"
-                    aria-hidden="true"
-                  ></i
+                  ><i id="facebook" aria-hidden="true"></i
                 ></a>
               </span>
               <span class="social">
                 <a href="https://github.com/cynergy-ruas" target="_blank"
-                  ><i class="fa fa-github fa-3x" aria-hidden="true"></i
+                  ><i id="github"></i
                 ></a>
               </span>
               <span class="social">
                 <a href="https://www.linkedin.com/in/aadhyaruas" target="_blank"
-                  ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i
+                  ><i id="linkedin"></i
                 ></a>
               </span>
             </div>
@@ -108,11 +103,11 @@
               <div class="col-md-12">
                 <a href="mailto:aadhyaruas@gmail.com"
                   ><h5>
-                    <span class="blue">Email :</span> aadhya-ruas@gmail.com
+                    <span class="blue">email :</span> contact@aadhya.tech
                   </h5></a
                 >
-                <a href="tel:987654321"
-                  ><h5><span class="blue">Phone :</span> +91 9876543210</h5></a
+                <a href="tel:7899774171"
+                  ><h5><span class="blue">phone :</span> +91-7899774171</h5></a
                 >
               </div>
             </div>
@@ -126,11 +121,11 @@
                 />
               </span>
               <span class="poc-des">
-                <h5><span class="blue">Name:</span> Rick Sanchez</h5>
-                <h5>Co-ordinator</h5>
+                <h5><span class="blue">name:</span> Vivek Badani</h5>
+                <h5>management lead and our poc.</h5>
                 <h5>
-                  <span class="blue">Contact:</span
-                  ><a href="tel:987654321"> +91 9876543210</a>
+                  <span class="blue">contact:</span
+                  ><a href="tel:9340140230"> +91-9340140230</a>
                 </h5>
               </span>
             </div>
@@ -154,6 +149,11 @@
     <script src="../scripts/jquery-3.3.1.min.js"></script>
     <script src="../scripts/jquery-ui.js"></script>
 
+    <!-- lottie for animations -->
+    <script src="../scripts/lottie.js"></script>
+
+    <!-- for DOM manipulation -->
+    <script src="../scripts/findus.js"></script>
     <!-- bootstrap cdn-->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"

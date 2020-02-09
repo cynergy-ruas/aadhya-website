@@ -23,7 +23,7 @@ body {
   color: #e5e5e5;
   font-weight: 300;
   font-size: 1.1rem;
-  font: "ig-regular";
+  font-family: "ig-regular";
   background-color: var(--black);
 }
 #map {
@@ -31,7 +31,9 @@ body {
   height: 500px;
   width: 80%;
 }
-
+.social > svg {
+  width: 50%;
+}
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -43,8 +45,13 @@ a:hover {
   text-decoration: none;
 }
 
+.mb-5 {
+  font-size: 1.5rem !important;
+}
+
 h1 {
-  font-family: "ig-regular";
+  font-size: 4rem !important;
+  font-family: "ig-bold";
 }
 h5 {
   font-weight: normal;
