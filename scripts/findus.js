@@ -1,14 +1,20 @@
-function initMap() {
-  var ruas = { lat: 13.0183642, lng: 77.5078933 };
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 20,
-    center: ruas
-  });
+var myCenter = new google.maps.LatLng(13.0183642, 77.5078933);
+function initialize() {
+  var mapProp = {
+    center: myCenter,
+    zoom: 18,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById("map"), mapProp);
+
   var marker = new google.maps.Marker({
-    position: ruas,
-    map: map
+    position: myCenter
   });
+
+  marker.setMap(map);
 }
+google.maps.event.addDomListener(window, "load", initialize);
 
 // instagram icon animation
 var instagram = document.getElementById("instagram");
