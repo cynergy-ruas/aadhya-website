@@ -17,46 +17,33 @@
   font-family: ig-bold;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
-body::-webkit-scrollbar {
-  display: none;
-}
 body {
-  width: 60%;
-  margin: auto;
-  align-items: center;
   font-family: "ig-regular";
   background-color: var(--black);
   color: var(--white);
 }
-.green {
-  color: var(--green);
-}
-.bold {
-  font-weight: bold;
-}
 h1 {
   color: var(--blue);
-  font-weight: bold;
   font-family: "ig-bold";
-  margin: 5% auto 3% auto;
+  margin: 3% 10%;
 }
-p {
-  line-height: 2;
-  font-size: large;
-}
-.about-page {
-  margin: 10% auto;
+.ques-box {
+  margin: 0%;
+  padding: 2%;
 }
 
-@media (max-width: 991.98px) {
-  p {
-    line-height: 1.2;
-    margin-bottom: 70px;
-  }
-  body {
-    width: 80%;
-  }
+.content {
+  width: 70%;
+  /* height: 100vh; */
+  margin: auto;
+  align-items: center;
 }
+.ques {
+  color: var(--green);
+  /* padding: 15%; */
+}
+
+/* animation */
 .animate-bot {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -84,5 +71,11 @@ p {
   to {
     bottom: 0;
     opacity: 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .content {
+    margin-bottom: 50px;
   }
 }
