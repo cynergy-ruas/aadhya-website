@@ -121,7 +121,9 @@ body {
 }
 .audio-btn-container>p{
   color: var(--white);
-  
+  font-family: 'ig-regular';
+  margin: 2px 0px;
+
 }
 /* LANDING PAGE IMAGES */
 .intro {
@@ -204,7 +206,9 @@ body {
   #loadingDiv {
     padding-top: 10em !important;
   }
-
+  .audio-btn-container>p{
+    font-size: 0.6rem;
+  }
   .intro {
     flex-direction: column;
     justify-content: space-evenly;
