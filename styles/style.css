@@ -39,52 +39,6 @@ body {
   overflow: hidden !important ;
 }
 
-/* NAVBAR */
-.navbar,
-.navbar-expand-sm,
-.nav-masthead {
-  display: flex !important;
-  padding: 0 !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-.navbar-collapse {
-  justify-content: center;
-}
-.nav-masthead .nav-link {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem !important;
-  padding-top: 0rem !important;
-  padding-bottom: 0.5rem !important;
-  text-align: center;
-  font-weight: 48;
-  font-size: 1.25rem;
-  background-color: transparent !important;
-  color: var(--white);
-  font-family: "ig-regular";
-}
-
-.nav-link:hover {
-  border-bottom: 0.1rem solid var(--green);
-}
-
-.nav-link.active,
-.nav-link:focus {
-  color: var(--blue);
-  outline: none;
-}
-
-.navbar-toggler-icon {
-  background: var(--black) !important;
-}
-
-.navbar-toggler {
-  text-emphasis: none;
-  outline: none !important;
-  background: transparent !important;
-}
-
 /* CLOCK ANIMANTION */
 #clockdiv {
   font-family: sans-serif;
@@ -169,6 +123,7 @@ body {
 }
 
 .intro img {
+  z-index: -1 !important;
   width: 50%;
 }
 

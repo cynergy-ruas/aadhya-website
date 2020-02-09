@@ -85,3 +85,18 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 });
+//nav animation
+var hamburger_bun = document.getElementById("hamburger");
+var burger_veggie = bodymovin.loadAnimation({
+  container: hamburger_bun,
+  renderer: "svg",
+  loop: false,
+  autoplay: false,
+  path: "assets/icons/burger.json"
+});
+var directionMenu = 1;
+hamburger_bun.addEventListener("click", e => {
+  burger_veggie.setDirection(directionMenu);
+  burger_veggie.play();
+  directionMenu = -directionMenu;
+});
