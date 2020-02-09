@@ -30,15 +30,16 @@ h1 {
 .guest-box {
   margin: 0 auto;
   padding: 2%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  align-content: center;
+  text-align: center;
 }
 
 .content {
   width: 70%;
   height: 100vh;
-  margin: 3% auto 15% auto;
+  margin: 0 auto;
   align-items: center;
 }
 .guest-name {
@@ -77,8 +78,3 @@ h1 {
   }
 }
 
-@media (max-width: 991.98px) {
-  .content {
-    margin: auto auto 25% auto;
-  }
-}
