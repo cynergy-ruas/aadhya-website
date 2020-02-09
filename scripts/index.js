@@ -13,7 +13,7 @@ var speaker_anim = bodymovin.loadAnimation({
   renderer: "svg",
   loop: false,
   autoplay: false,
-  path: "assets/speaker.json"
+  path: "assets/icons/speaker.json"
 });
 
 //LOADER animation and loader remove
@@ -29,6 +29,8 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
   //remove loader
   $("#loadingDiv").remove();
+  //play speaker icon animation on load
+  speaker_anim.play();
 }
 
 //loader animation template.
@@ -41,24 +43,31 @@ var animation = bodymovin.loadAnimation({
 });
 
 // SOUND MUTE BUTTON AND IT's complementing LOGO ANIMATION.
+var speakerdirection = 1;
+
 function aud_play_pause() {
   var myAudio = document.getElementById("myAudio");
   myAudio.play();
+
   //check if audio is muted or not
   if (myAudio.muted === true) {
-    //play speaker button animation
+    //change direction of animation flow and play
+    speakerdirection = -speakerdirection;
+    speaker_anim.setDirection(speakerdirection);
     speaker_anim.play();
+
     //unmute audio
     myAudio.muted = !myAudio.muted;
     //play aadhya beating animation
     logo_animation.play();
   } else {
-    //reset speaker animation
-    speaker_anim.goToAndStop(0);
+    //change direction of animation flow and play
+    speakerdirection = -speakerdirection;
+    speaker_anim.setDirection(speakerdirection);
+    speaker_anim.play();
     //pause addhya animation
     logo_animation.pause();
     //unmute audio
-
     myAudio.muted = !myAudio.muted;
   }
 }
