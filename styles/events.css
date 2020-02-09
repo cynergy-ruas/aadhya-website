@@ -28,6 +28,7 @@ body {
   color: var(--white);
   font-weight: 300;
   font-size: 1.1rem;
+  font-family: 'ig-regular';
 }
 
 a {
@@ -48,13 +49,14 @@ a:hover {
 }
 
 h1 {
-  font-family: "ig-regular";
+  font-family: "ig-bold";
   color: var(--blue);
   font-weight: bold;
 }
 h6 {
-  font-family: "ig-regular";
+  font-family: "ig-bold";
   color: var(--green);
+  font-size: 1.25rem;
 }
 .btn {
   font-size: 12px;
