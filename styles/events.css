@@ -89,6 +89,9 @@ h6 {
   .custom-owl-carousel .col-lg-5 {
     margin-top: 40%;
   }
+  .slide-text {
+    margin-top: 50px;
+  }
 }
 
 .custom-owl-carousel .owl-custom-direction {
@@ -141,6 +144,6 @@ h6 {
 }
 
 .slide-text {
-  padding: 5% auto;
+  padding: 0;
   width: fit-content;
 }
