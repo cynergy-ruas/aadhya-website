@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- FAVICON  -->
+    <link rel="icon" href="../favicon.png" sizes="64x64" />
+
+    <!-- CSS AND OTHER BOOTSTRAP LINKS -->
+    <!-- LINKED CSS -->
+    <link rel="stylesheet" href="../../styles/nav.css" />
+
+    <link rel="stylesheet" href="../../styles/eventlist.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- TITLE  -->
+    <title>Aadhya - evolve . engage . elevate</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar nav-masthead  navbar-expand-sm fixed-bottom animate-bottom"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsingNavbarLg"
+      >
+        <span class="navbar-toggler-icon"><div id="hamburger"></div></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbarLg">
+        <ul class="navbar-nav nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../comingsoon.html">Guests</a>
+          </li>
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="components/comingsoon.html">Flagship</a>
+      </li> -->
+          <!-- <li class="nav-item">
+        <a class="nav-link" href="components/comingsoon.html">Collaborations</a>
+      </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="../comingsoon.html">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../findus.html">Find us</a>
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Entire Event list-->
+    <div class="section body">
+      <h1>competitions</h1>
+
+      <ul class="contacts">
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="appdev"
+        >
+          <span class="post"
+            >Native application <br />
+            development</span
+          >
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-dronedev"
+            src="../../assets/images/eventlist/devops.png"
+          />
+        </div>
+      </ul>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lottie script -->
+    <script src="../../scripts/lottie.js"></script>
+    <!-- nav script -->
+    <script src="../../scripts/nav.js"></script>
+
+    <!-- bootstrap CDN -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function show(contact) {
+        $(contact)
+          .removeClass("fade")
+          .addClass("active")
+          .siblings("li")
+          .addClass("fade");
+        $(
+          "#thumb-" +
+            $(contact)
+              .data("filename")
+              .replace(" ", "")
+        )
+          .addClass("active")
+          .siblings("img")
+          .removeClass("active");
+      }
+      function release(contact) {
+        $(contact)
+          .removeClass("active")
+          .siblings()
+          .removeClass("fade");
+        $(".section.body .contacts img").removeClass("active");
+      }
+    </script>
+  </body>
+</html>

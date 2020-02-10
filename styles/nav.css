@@ -22,7 +22,7 @@
 .navbar,
 .navbar-expand-sm,
 .nav-masthead {
-  z-index: 1000 !important;
+  z-index: +1000 !important;
   display: flex !important;
   padding: 0 !important;
   background: var(--black);
@@ -33,7 +33,7 @@
   justify-content: center;
 }
 .nav-masthead .nav-link {
-  z-index: 1000 !important;
+  z-index: +1000 !important;
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem 2rem !important;
@@ -100,7 +100,7 @@
 /* RESPONSIVE MEDIA  */
 @media only screen and (max-width: 700px) {
   .nav-link {
-    z-index: 1000 !important;
+    z-index: +1000 !important;
     padding-right: 3rem !important;
   }
 }
