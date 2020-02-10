@@ -17,6 +17,10 @@
   font-family: ig-bold;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-family: "ig-regular";
   background-color: var(--black);

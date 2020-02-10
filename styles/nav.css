@@ -22,7 +22,7 @@
 .navbar,
 .navbar-expand-sm,
 .nav-masthead {
-  z-index: 2 !important;
+  z-index: 1000 !important;
   display: flex !important;
   padding: 0 !important;
   background: var(--black);
@@ -33,11 +33,12 @@
   justify-content: center;
 }
 .nav-masthead .nav-link {
-  z-index: 2 !important;
+  z-index: 1000 !important;
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem !important;
-  padding-bottom: 0.5rem !important;
+  padding: 0.5rem 2rem !important;
+  /* padding: 2rem !important;
+  padding-bottom: 0.5rem !important; */
   text-align: center;
   font-weight: 48;
   font-size: 1.25rem;
@@ -99,10 +100,7 @@
 /* RESPONSIVE MEDIA  */
 @media only screen and (max-width: 700px) {
   .nav-link {
-    z-index: 2 !important;
+    z-index: 1000 !important;
     padding-right: 3rem !important;
-  }
-  #map {
-    margin: 10%;
   }
 }

@@ -28,7 +28,7 @@ body {
 }
 body {
   overflow: visible !important;
-  font-family: 'ig-regular', Arial, Helvetica, sans-serif;
+  font-family: "ig-regular", Arial, Helvetica, sans-serif;
 }
 
 /* LOADER */
@@ -68,7 +68,7 @@ body {
 }
 
 #clockdiv div > span {
-  padding: 15px;
+  padding: 8.5px;
   border-radius: 3px;
   background: var(--black);
   display: inline-block;
@@ -124,16 +124,15 @@ body {
 #audio-btn {
   width: 30px !important;
 }
-.audio-btn-container{
+.audio-btn-container {
   display: flex;
   text-align: center;
   align-items: center;
 }
-.audio-btn-container>p{
+.audio-btn-container > p {
   color: var(--white);
-  font-family: 'ig-regular';
+  font-family: "ig-regular";
   margin: 2px 0px;
-
 }
 /* LANDING PAGE IMAGES */
 .intro {
@@ -216,7 +215,7 @@ body {
   #loadingDiv {
     padding-top: 10em !important;
   }
-  .audio-btn-container>p{
+  .audio-btn-container > p {
     font-size: 0.6rem;
   }
   .intro {
