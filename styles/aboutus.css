@@ -47,7 +47,17 @@ p {
 .about-page {
   margin: 10% auto;
 }
-
+.tech-partner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.cynergy-logo {
+  width: 30%;
+  height: auto;
+  margin: 4%;
+}
 @media (max-width: 991.98px) {
   p {
     line-height: 1.2;
@@ -55,6 +65,14 @@ p {
   }
   body {
     width: 80%;
+  }
+  .tech-partner {
+    font-size: small;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .cynergy-logo {
+    width: 60%;
   }
 }
 .animate-bot {
