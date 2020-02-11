@@ -18,19 +18,22 @@
   font-family: ig-bold;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
+body::-webkit-scrollbar {
+  display: none !important;
+}
 
 h1 {
-  position: relative;
-  top: 15px;
+  /* position: relative; */
+  /* top: 15px; */
+  margin: 4%;
   color: var(--blue) !important;
-  padding: 3rem;
-  padding-bottom: 2rem;
-  z-index: +10;
+  /* padding: 3rem; */
+  /* padding-bottom: 2rem; */
+  /* z-index: 10; */
 }
-.section.body {
+/* .section.body {
   overflow: scroll !important;
-  scrollbar-color: transparent;
-}
+} */
 .section.body,
 .section.body .contacts,
 .section.body .underlay {
@@ -165,6 +168,34 @@ h1 {
   cursor: pointer;
   margin: 0.5em;
 }
+.top-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.register {
+  margin: 4%;
+  font-size: 30px;
+  background-color: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  font-size: x-large;
+  padding: 4px 25px;
+  z-index: 200;
+  border-radius: 5%;
+  font-weight: 200;
+  text-decoration: none;
+  font-family: "ig-regular";
+}
+
+.register:hover {
+  background-color: var(--white);
+  text-decoration: none;
+  color: var(--blue);
+  /* color: var(--black); */
+}
 @media only screen and (max-width: 800px) {
   h1 {
     position: relative;
@@ -173,6 +204,7 @@ h1 {
     padding: 3rem;
     padding-bottom: 5rem;
     text-align: center;
+    align-items: center;
     font-size: 1rem;
   }
   .section.body,
@@ -231,5 +263,14 @@ h1 {
     letter-spacing: 0.06em;
     font-size: 0.9em;
     text-transform: lowercase;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .register {
+    padding: 5px 10px;
+    font-size: 20px;
   }
 }
