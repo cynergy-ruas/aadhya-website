@@ -14,7 +14,7 @@ var burger_patty = bodymovin.loadAnimation({
   renderer: "svg",
   loop: false,
   autoplay: false,
-  path: "/assets/icons/burger.json"
+  path: "../assets/icons/burger.json"
 });
 hamburger.addEventListener("click", e => {
   burger_patty.setDirection(directionMenu);

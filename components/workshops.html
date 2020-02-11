@@ -10,9 +10,9 @@
 
     <!-- CSS AND OTHER BOOTSTRAP LINKS -->
     <!-- LINKED CSS -->
-    <link rel="stylesheet" href="../../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
 
-    <link rel="stylesheet" href="../../styles/eventlist.css" />
+    <link rel="stylesheet" href="../styles/eventlist.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -40,16 +40,16 @@
       <div class="navbar-collapse collapse" id="collapsingNavbarLg">
         <ul class="navbar-nav nav">
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html">Home</a>
+            <a class="nav-link " href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../aboutus.html">About us</a>
+            <a class="nav-link" href="aboutus.html">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../events.html">Events</a>
+            <a class="nav-link" href="events.html">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../comingsoon.html">Guests</a>
+            <a class="nav-link" href="findus.html">Guests</a>
           </li>
           <!-- <li class="nav-item">
         <a class="nav-link" href="components/comingsoon.html">Flagship</a>
@@ -58,10 +58,10 @@
         <a class="nav-link" href="components/comingsoon.html">Collaborations</a>
       </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="../comingsoon.html">Faq</a>
+            <a class="nav-link" href="faq.html">Faq</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../findus.html">Find us</a>
+            <a class="nav-link" href="findus.html">Find us</a>
           </li>
           <li class="nav-item"></li>
         </ul>
@@ -70,104 +70,123 @@
 
     <!-- Entire Event list-->
     <div class="section body">
-      <h1>talks</h1>
-
+      <h1>workshops</h1>
       <ul class="contacts">
-        <!-- blockchain -->
+        <!-- native app development -->
         <li
           onmouseover="show(this)"
           onmouseout="release(this)"
-          data-filename="blockchain"
-        >
-          <span class="post">blockchain</span>
-        </li>
-        <div>
-          <img
-            class="photo"
-            id="thumb-blockchain"
-            src="../../assets/images/eventlist/appdev.png"
-          />
-        </div>
-
-        <!-- cyber security -->
-        <li
-          onmouseover="show(this)"
-          onmouseout="release(this)"
-          data-filename="cs"
+          data-filename="appdev"
         >
           <span class="post"
-            >hacking slash</span
+            >Native application <br />
+            development</span
           >
         </li>
         <div>
           <img
             class="photo"
-            id="thumb-cs"
-            src="../../assets/images/eventlist/appdev.png"
+            id="thumb-appdev"
+            src="../assets/images/eventlist/appdev.png"
           />
         </div>
 
-        <!-- quantum computing -->
+        <!-- kaggle -->
         <li
           onmouseover="show(this)"
           onmouseout="release(this)"
-          data-filename="qc"
+          data-filename="kaggle"
         >
-          <span class="post">quantum computing</span>
+          <span class="post">introduction to <br />kaggle</span>
         </li>
         <div>
           <img
             class="photo"
-            id="thumb-qc"
-            src="../../assets/images/eventlist/appdev.png"
+            id="thumb-kaggle"
+            src="../assets/images/eventlist/appdev.png"
           />
         </div>
 
-        <!-- green construction/smartcity -->
+        <!-- deep learning -->
         <li
           onmouseover="show(this)"
           onmouseout="release(this)"
-          data-filename="gcs"
+          data-filename="deepLearning"
         >
-          <span class="post">green construction<br />smartcity</span>
+          <span class="post">Deep learning</span>
         </li>
         <div>
           <img
             class="photo"
-            id="thumb-gcs"
-            src="../../assets/images/eventlist/appdev.png"
+            id="thumb-deepLearning"
+            src="../assets/images/eventlist/appdev.png"
           />
         </div>
 
-        <!-- electricity mobility -->
+        <!-- iOT -->
         <li
           onmouseover="show(this)"
           onmouseout="release(this)"
-          data-filename="electric mobility"
+          data-filename="iot"
         >
-          <span class="post">electric mobility</span>
+          <span class="post">internet of things</span>
         </li>
         <div>
           <img
             class="photo"
-            id="thumb-blockchain"
-            src="../../assets/images/eventlist/appdev.png"
+            id="thumb-iot"
+            src="../assets/images/eventlist/appdev.png"
           />
         </div>
 
-        <!-- talk by drdo -->
+        <!-- image processing and AI -->
         <li
           onmouseover="show(this)"
           onmouseout="release(this)"
-          data-filename="drdo"
+          data-filename="imageProcessingai"
         >
-          <span class="post">a talk by <br />DRDO</span>
+          <span class="post"
+            >image processing and<br />
+            ai</span
+          >
         </li>
         <div>
           <img
             class="photo"
-            id="thumb-drdo"
-            src="../../assets/images/eventlist/appdev.png"
+            id="thumb-imageProcessingai"
+            src="../assets/images/eventlist/appdev.png"
+          />
+        </div>
+
+        <!-- drone development -->
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="droneDev"
+        >
+          <span class="post">drone development</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-droneDev"
+            src="../assets/images/eventlist/appdev.png"
+          />
+        </div>
+
+        <!-- DevOps -->
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="devops"
+        >
+          <span class="post">devops</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-devops"
+            src="../assets/images/eventlist/appdev.png"
           />
         </div>
       </ul>
@@ -180,9 +199,9 @@
     ></script>
 
     <!-- lottie script -->
-    <script src="../../scripts/lottie.js"></script>
+    <script src="../scripts/lottie.js"></script>
     <!-- nav script -->
-    <script src="../../scripts/nav.js"></script>
+    <script src="../scripts/nav.js"></script>
 
     <!-- bootstrap CDN -->
     <script
