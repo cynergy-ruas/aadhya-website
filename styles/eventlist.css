@@ -25,9 +25,11 @@ h1 {
   color: var(--blue) !important;
   padding: 3rem;
   padding-bottom: 2rem;
+  z-index: +10;
 }
 .section.body {
   overflow: scroll !important;
+  scrollbar-color: transparent;
 }
 .section.body,
 .section.body .contacts,
@@ -65,6 +67,7 @@ h1 {
   background: var(--black);
 }
 .section.body .contacts {
+  margin: 4% auto;
   display: flex;
   box-sizing: border-box;
   padding-top: 40px;
@@ -85,7 +88,7 @@ h1 {
   justify-content: center;
   width: 25%;
   color: var(--white);
-  height: 30%;
+  height: 2%;
   -webkit-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -177,7 +180,7 @@ h1 {
     background: var(--black);
     height: unset;
     width: 100vw;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
   }
   .contacts {
