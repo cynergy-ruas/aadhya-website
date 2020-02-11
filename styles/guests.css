@@ -31,6 +31,7 @@ h1 {
   font-family: "ig-bold";
   margin: 3% 10%;
 }
+
 .guest-box {
   margin: 0 auto;
   padding: 2%;
@@ -39,7 +40,14 @@ h1 {
   align-items: center;
   text-align: center;
 }
-
+.profile-img {
+  border-radius: 50%;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--blue);
+}
 .content {
   width: 70%;
   height: 100vh;
@@ -47,8 +55,10 @@ h1 {
   align-items: center;
 }
 .guest-name {
-  color: var(--green);
-  padding: 3%;
+  padding-top: 10px;
+  color: var(--white);
+  margin: 0;
+  /* padding: auto; */
 }
 
 /* animation */
@@ -81,4 +91,3 @@ h1 {
     opacity: 1;
   }
 }
-
