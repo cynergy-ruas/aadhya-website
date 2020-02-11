@@ -131,7 +131,8 @@ h1 {
   text-align: center;
 }
 .section.body .contacts > li:hover {
-  color: transparent;
+  color: var(--green);
+  opacity: 0;
 }
 .section.body .contacts > li.fade {
   opacity: 0;
