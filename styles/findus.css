@@ -18,6 +18,9 @@
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
 /* Base */
+body::-webkit-scrollbar {
+  display: none;
+}
 body {
   line-height: 1.7;
   color: #e5e5e5;
