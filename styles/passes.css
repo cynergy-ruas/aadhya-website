@@ -132,6 +132,14 @@ body {
 .elements {
   padding-bottom: 2rem;
 }
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
 @media screen and (min-width: 768px) {
   .tab-button-outer {
     position: relative;
