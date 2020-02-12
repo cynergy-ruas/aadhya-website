@@ -42,6 +42,13 @@ h1 {
 }
 .profile-img {
   border-radius: 50%;
+  width: 70%;
+  height: auto;
+}
+
+/* wing caommander img */
+.height-50 {
+  height: 50%;
 }
 p {
   font-size: 1.2rem;
