@@ -1,0 +1,149 @@
+:root {
+  --black: #070507;
+  --white: #e5e5e5;
+  --blue: #1089ff;
+  --green: #50d890;
+}
+
+@font-face {
+  font-family: ig-regular;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: ig-italic;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+}
+@font-face {
+  font-family: ig-bold;
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+}
+
+* {
+  font-family: "ig-regular";
+}
+body {
+  font-weight: 300;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: var(--black) !important;
+}
+.tabs {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#tab-button {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#tab-button li {
+  display: table-cell;
+  width: 20%;
+}
+#tab-button li a {
+  display: block;
+  padding: 0.5em;
+  background: var(--blue);
+  border-bottom: 1px solid var(--white);
+  text-align: center;
+  color: var(--white);
+  text-decoration: none;
+}
+#tab-button li:not(:first-child) a {
+  border-left: none;
+}
+#tab-button li a:hover,
+#tab-button .is-active a {
+  border-bottom-color: transparent;
+  background: var(--white);
+  color: var(--blue);
+}
+
+.tab-contents > h2 {
+  font-size: 2rem;
+  color: var(--blue) !important;
+}
+.tab-contents > h6 {
+  font-size: 1.2rem;
+  color: var(--green);
+  font-weight: bold;
+}
+.tab-contents {
+  padding: 0.5em 2em 1em;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.tab-button-outer {
+  display: none;
+}
+.tab-contents {
+  margin-top: 20px;
+  box-shadow: 0 1px 3px var(--white), 0 1px 2px var(--white);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.tab-contents > p {
+  font-weight: bold;
+}
+
+.tab-contents:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 2px solid var(--white);
+  box-shadow: 0 5px 9px var(--white), 0 9px 9px var(--white);
+}
+.button > a {
+  border: none;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: bold;
+}
+
+.button > a:hover {
+  background: var(--white);
+  color: var(--blue);
+  text-decoration: none;
+}
+.elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blue {
+  font-size: 1.2rem;
+  color: var(--blue);
+  font-weight: bolder !important;
+}
+.white {
+  color: var(--white);
+  font-weight: bold;
+}
+.elements {
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .tab-button-outer {
+    position: relative;
+    z-index: 2;
+    display: block;
+  }
+  .tab-select-outer {
+    display: none;
+  }
+  .tab-contents {
+    position: relative;
+    top: -1px;
+    margin-top: 0;
+  }
+}
