@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- FAVICON  -->
+    <link rel="icon" href="../favicon.png" sizes="64x64" />
+
+    <!-- CSS AND OTHER BOOTSTRAP LINKS -->
+    <!-- LINKED CSS -->
+    <link rel="stylesheet" href="../styles/nav.css" />
+
+    <link rel="stylesheet" href="../styles/eventlist.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- TITLE  -->
+    <title>Aadhya - evolve . engage . elevate</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar nav-masthead  navbar-expand-sm fixed-bottom animate-bottom"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsingNavbarLg"
+      >
+        <span class="navbar-toggler-icon"><div id="hamburger"></div></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbarLg">
+        <ul class="navbar-nav nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guests.html">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comingsoon.html">Hackathon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="passes.html">Passes</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="comingsoon.html">Collaborations</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="findus.html">Find us</a>
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Entire Event list-->
+    <div class="section body">
+      <div class="top-container">
+        <h1>
+          extra curricular activities
+        </h1>
+
+        <div class="buttons">
+          <a class="btn" href="passes.html">click here for extra discount</a>
+          <a class="btn" href="https://www.townscript.com/o/aadhya-2020l"
+            >register.</a
+          >
+        </div>
+      </div>
+
+      <ul class="contacts ">
+        <!-- games 'in-stall'ed -->
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="games-installed"
+        >
+          <span class="post">games 'in-stall'ed</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-games-installed"
+            src="../assets/images/eventlist/eca/7.png"
+          />
+        </div>
+        <!-- open floor discussion -->
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="open-flr-dscsn"
+        >
+          <span class="post">open floor discussion</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-open-flr-dscsn"
+            src="../assets/images/eventlist/eca/6.png"
+          />
+        </div>
+        <!-- online events -->
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="online-events"
+        >
+          <span class="post">online events</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-online-events"
+            src="../assets/images/eventlist/eca/5.png"
+          />
+        </div>
+        <!-- pubg -->
+
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="pubg"
+        >
+          <span class="post">pubg</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-pubg"
+            src="../assets/images/eventlist/eca/4.png"
+          />
+        </div>
+        <!-- call of duty-->
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="cod"
+        >
+          <span class="post">call of duty</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-cod"
+            src="../assets/images/eventlist/eca/3.png"
+          />
+        </div>
+        <!-- dota 2-->
+        <li
+          onmouseover="show(this)"
+          onmouseout="release(this)"
+          data-filename="dota-2"
+        >
+          <span class="post">dota 2</span>
+        </li>
+        <div>
+          <img
+            class="photo"
+            id="thumb-dota-2"
+            src="../assets/images/eventlist/eca/2.png"
+          />
+        </div>
+      </ul>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lottie script -->
+    <script src="../scripts/lottie.js"></script>
+    <!-- nav script -->
+    <script src="../scripts/nav.js"></script>
+
+    <!-- bootstrap CDN -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function show(contact) {
+        $(contact)
+          .removeClass("fade")
+          .addClass("active")
+          .siblings("li")
+          .addClass("fade");
+        $(
+          "#thumb-" +
+            $(contact)
+              .data("filename")
+              .replace(" ", "")
+        )
+          .addClass("active")
+          .siblings("img")
+          .removeClass("active");
+      }
+      function release(contact) {
+        $(contact)
+          .removeClass("active")
+          .siblings()
+          .removeClass("fade");
+        $(".section.body .contacts img").removeClass("active");
+      }
+    </script>
+  </body>
+</html>
