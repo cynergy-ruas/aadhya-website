@@ -16,7 +16,7 @@
 }
 @font-face {
   font-family: ig-bold;
-  src: url(../fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
 body::-webkit-scrollbar {
   display: none !important;
@@ -26,7 +26,9 @@ body{
   background-color: var(--black) !important;
   font-family: "ig-regular" !important;
 }
-
+.section{
+  margin-bottom: 12%;
+}
 .top-container {
   display: flex;
   flex-direction: row;
@@ -44,13 +46,15 @@ h3{
   font-family: "ig-bold" !important;
 }
 .card{
-  margin: 5%;
+  margin: 5% 2%;
   padding: 3%;
   background-color: var(--black) !important ;
   color: var(--whiteu);
   height: 95%;
   box-shadow: #151414 0px 0px 2px 2px, #000000 4px 4px 8px, #1f1d1d -4px -4px 10px;
   border-radius: 5% !important;
+  text-align: justify;
+  /* text-justify: inter-word; */
   
 
 }
@@ -60,6 +64,7 @@ h3{
 }
 .card-title{
   text-align: center;
+  text-transform: lowercase;
 }
 
 
@@ -100,8 +105,10 @@ h3{
 /* media-query */
 @media (max-width: 991.98px) {
   .card-block{
-    text-align: center;
-    display: inline-block;
+    /* text-align: center; */
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+    /* display: inline-block; */
   
   }
   .top-container {
