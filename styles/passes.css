@@ -1,0 +1,27 @@
+:root {
+    --black: #070507;
+    --white: #e5e5e5;
+    --blue: #1089ff;
+    --green: #50d890;
+  }
+  
+  @font-face {
+    font-family: ig-regular;
+    src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+  }
+  @font-face {
+    font-family: ig-italic;
+    src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+  }
+  @font-face {
+    font-family: ig-bold;
+    src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  }
+.pass-img {
+  width: 80%;
+  height: auto;
+  border: 2px white;
+}
+body{
+
+}
