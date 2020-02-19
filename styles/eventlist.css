@@ -35,9 +35,9 @@ h3{
 .card{
   margin: 5%;
   padding: 3%;
-  background-color: #1a1919 !important ;
+  background-color: var(--black) !important ;
   color: var(--whiteu);
-  filter: drop-shadow(5px 5px 4px #4444dd);
+  box-shadow: #151414 0px 0px 2px 2px, #000000 4px 4px 8px, #1f1d1d -4px -4px 10px;
   /* border: 1px solid var(--greenu) !important; */
   /* border-radius: 5% !important; */
   
@@ -62,8 +62,9 @@ border-right: 1px !important; */
   font-family: "ig-regular";
   font-size: 20px !important;
   font-weight: 900;
-  outline: medium;
-  border-color: var(--white) !important;
+  box-shadow: #151414 0px 0px 2px 2px, #000000 4px 4px 8px, #1f1d1d -4px -4px 10px;
+  /* outline: medium; */
+  /* border-color: var(--white) !important; */
   color: var(--white) !important;
 }
 .btn:hover,
