@@ -26,29 +26,40 @@ body{
   background-color: var(--black) !important;
   font-family: "ig-regular" !important;
 }
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
 h1{
   color: var(--blueu);
+  font-family: "ig-bold";
+  margin: 3% !important;
 }
 h3{
   color: var(--greenu);
+  font-family: "ig-bold" !important;
 }
 .card{
   margin: 5%;
   padding: 3%;
   background-color: var(--black) !important ;
   color: var(--whiteu);
+  height: 95%;
   box-shadow: #151414 0px 0px 2px 2px, #000000 4px 4px 8px, #1f1d1d -4px -4px 10px;
-  /* border: 1px solid var(--greenu) !important; */
   border-radius: 5% !important;
   
 
-   /* border-color: var(--greenu) !important;
-  border-left: 5px !important;
-border-right: 1px !important; */
 }
 .price{
   color: var(--blueu);
   font-weight: bold;
+}
+.card-title{
+  text-align: center;
 }
 
 
@@ -83,4 +94,25 @@ border-right: 1px !important; */
   min-width: 40%;
   justify-content: flex-end;
   padding: 0;
+}
+
+
+/* media-query */
+@media (max-width: 991.98px) {
+  .card-block{
+    text-align: center;
+    display: inline-block;
+  
+  }
+  .top-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    font-size: 15px !important;
+  }
 }
