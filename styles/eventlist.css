@@ -39,7 +39,7 @@ h3{
   color: var(--whiteu);
   box-shadow: #151414 0px 0px 2px 2px, #000000 4px 4px 8px, #1f1d1d -4px -4px 10px;
   /* border: 1px solid var(--greenu) !important; */
-  /* border-radius: 5% !important; */
+  border-radius: 5% !important;
   
 
    /* border-color: var(--greenu) !important;
