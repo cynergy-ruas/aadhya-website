@@ -86,7 +86,7 @@ h3 {
 .btn:hover {
   outline: none !important;
   color: var(--black) !important;
-  color: var(--green) !important;
+  color: var(--greenu) !important;
 }
 .btn:focus,
 .btn:active {
