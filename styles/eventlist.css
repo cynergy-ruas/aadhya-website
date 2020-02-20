@@ -2,8 +2,8 @@
 :root {
   --black: #070507;
   --white: #e5e5e5;
-  --blue: #1089ff;
-  --green: #50d890;
+  --blueu: #1089ff;
+  --greenu: #50d890;
 }
 
 @font-face {
@@ -37,12 +37,12 @@ body {
   align-items: center;
 }
 h1 {
-  color: var(--blue);
+  color: var(--blueu);
   font-family: "ig-bold";
   margin: 3% !important;
 }
 h3 {
-  color: var(--green);
+  color: var(--greenu);
   font-family: "ig-bold" !important;
 }
 .card {
@@ -58,7 +58,7 @@ h3 {
   /* text-justify: inter-word; */
 }
 .price {
-  color: var(--blue);
+  color: var(--blueu);
   font-weight: bold;
 }
 .card-title {
