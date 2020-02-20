@@ -36,6 +36,8 @@ h1 {
 }
 .passes-images{
 text-align: center;
+margin-top: 2%;
+margin-bottom: 10%;
 }
 body{
   background-color: var(--black);
@@ -60,6 +62,10 @@ img:hover {
   width: 95%;
   -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
   filter: grayscale(0%); /* FF 35+ */
+}
+.passes-images{
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 
