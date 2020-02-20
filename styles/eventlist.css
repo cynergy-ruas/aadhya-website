@@ -58,7 +58,7 @@ h3 {
   /* text-justify: inter-word; */
 }
 .price {
-  color: var(--blueu);
+  color: var(--blue);
   font-weight: bold;
 }
 .card-title {
