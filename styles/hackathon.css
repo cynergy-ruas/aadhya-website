@@ -33,6 +33,7 @@ body {
   display: flex !important;
   flex-direction: column;
   margin: 0;
+  margin-bottom: 10rem;
   padding: 0;
   width: 100%;
   height: 100% !important;
@@ -56,6 +57,7 @@ body {
   align-items: center;
   margin-bottom: 10px;
   margin-left: 60px;
+
   width: intrinsic; /* Safari/WebKit uses a non-standard name */
   width: -moz-max-content; /* Firefox/Gecko */
   width: -webkit-max-content; /* Chrome */
@@ -103,6 +105,36 @@ body {
   width: max-content;
 }
 
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rem;
+}
+
+.register {
+  border: solid;
+  border-color: var(--blue);
+  padding: 20px;
+  margin-top: 10px;
+  width: intrinsic; /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content; /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
+  width: max-content;
+}
+
+.register a {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.register:hover {
+  transform: scale(0.8);
+  transition: transform 0.3s;
+}
+.register a:hover {
+  text-decoration: none;
+  color: var(--greenu);
+}
 .prize {
   margin-left: 60px;
   margin-top: 10px;
@@ -305,6 +337,12 @@ body {
   .wrapper {
     padding-right: 0;
     margin-right: 0;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+  }
+
+  .wrap {
+    margin-bottom: 4rem;
   }
   .content-box {
     margin: 1em auto;
@@ -344,7 +382,22 @@ body {
     color: var(--white);
     font-size: 0.8em;
   }
+  .register {
+    border: solid;
+    border-color: var(--blue);
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+    width: intrinsic; /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content; /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    width: max-content;
+  }
 
+  .register a {
+    font-size: 1rem;
+    color: var(--white);
+  }
   .prize {
     margin-left: 15px;
   }
