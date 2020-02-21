@@ -21,21 +21,22 @@
 body::-webkit-scrollbar {
   display: none !important;
 }
-
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0  !important;
+  padding: 0 ;
   background-color: var(--black) !important;
   font-family: "ig-regular" !important;
+
 }
 
 .wrapper {
+  overflow: hidden !important;
   display: flex !important;
   flex-direction: column;
   margin: 0;
   margin-bottom: 10rem;
   padding: 0;
-  width: 100%;
+  width: 100% !important;
   height: 100% !important;
   flex-wrap: wrap;
   align-items: center;
@@ -43,6 +44,7 @@ body {
   background-image: url(../assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg);
   background-size: cover;
   background-position-x: center;
+  background-attachment:fixed ;
   box-shadow: 0 3000px rgba(0, 0, 0, 0.657) inset;
 }
 
@@ -333,6 +335,18 @@ body {
 
 /* RESPONSIVE MEDIA  */
 @media only screen and (max-width: 800px) {
+
+  /* order of prize
+  div#first-prize   {-webkit-order: 1;}
+  div#second-prize  {-webkit-order: 2;}
+  div#third-prize {-webkit-order: 3;}
+  */
+  
+  div#first-prize   {background-color: aqua; order: 1;}
+  div#prize   {order: 2;}
+  div#prize  {order: 3;}
+ 
+
   /* lander */
   .wrapper {
     padding-right: 0;
@@ -438,8 +452,8 @@ body {
     margin-block-start: 0.5rem !important;
     margin-inline-end: 2.5em;
     padding-bottom: 2rem;
-    padding-top: 5em;
-    float: center;
+    padding-top: 1em;
+    /* float: center; */
     color: var(--white);
   }
 
