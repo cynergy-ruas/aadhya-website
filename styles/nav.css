@@ -3,7 +3,7 @@
   --black: #070507;
   --white: #e5e5e5;
   --blue: #1089ff;
-  --green: #50d890;
+  --greenu: #50d890;
 }
 @font-face {
   font-family: ig-regular;
@@ -48,7 +48,7 @@
 }
 
 .nav-link:hover {
-  border-bottom: 0.1rem solid var(--green);
+  border-bottom: 0.1rem solid var(--greenu);
 }
 
 .nav-link.active,
