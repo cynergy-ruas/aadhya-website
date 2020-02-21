@@ -1,4 +1,5 @@
 /* ASSINGING COLOR VARS AND FONT FAMILY */
+
 :root {
   --black: #070507;
   --white: #e5e5e5;
@@ -10,80 +11,91 @@
   font-family: ig-regular;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
 }
+
 @font-face {
   font-family: ig-italic;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
 }
+
 @font-face {
   font-family: ig-bold;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
+
 body::-webkit-scrollbar {
-  display: none ;
+  display: none;
 }
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  margin: 0  ;
-  padding: 0 ;
+  margin: 0;
+  padding: 0;
   background-color: var(--black) !important;
   font-family: "ig-regular" !important;
   color: var(--white);
-  background-position: center;
-  background-attachment: fixed;
+}
 
+.imghead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/images/photo-1451187580459-43490279c0fa.jpeg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover ;
-  background-image: url(../assets/images/photo-1451187580459-43490279c0fa.jpeg);
-
+  background-size: cover;
 }
 
-.top-container{
-
-  /* height: 100%;  */
-
-  text-align: right;
-  margin-right: 10%;
-  margin-bottom: 20%;
-
-}
-
-.hackxruas > h1{
-  margin: 5% auto auto auto;
+.imghead h1 {
   font-size: 12vw;
-  fill: none;
+  color: var(--blue);
+  font-family: "ig-bold";
 }
-.intro > h1{
+
+.imghead h2 {
   font-size: 5vw;
-  text-align: right;
 }
-.clg-name > h2{
+
+.imghead h3 {
   font-size: 2vw;
   color: var(--greenu);
 }
-.hack-date{
+
+.imghead h4 {
   color: var(--white);
 }
-.register-btn{
+
+.register-btn {
   font-size: 3vw;
-
-
   /* border: % solid var(--white) !important; */
 }
+
 .register-link {
   border-radius: 5%;
   margin-bottom: 15% !important;
   /* background-color: var(--black); */
-  
   /* border: medium solid var(--black); */
   text-decoration: none !important;
-} 
-.register-link:hover{
+}
+
+.register-link:hover {
   color: var(--greenu);
 }
-span{
+
+span {
   color: var(--greenu);
 }
+
 /* about */
-.about-container , .offer-container{
+
+.about-container, .offer-container {
   width: 50%;
   color: var(--white);
   margin: 7%;
@@ -91,12 +103,7 @@ span{
   font-size: larger;
   background-color: var(--black) !important;
 }
-.offer-container{
+
+.offer-container {
   float: left;
 }
-
-h1{
-  color: var(--blue);
-  font-family: "ig-bold";
-}
-
