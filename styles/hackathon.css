@@ -19,486 +19,84 @@
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
 body::-webkit-scrollbar {
-  display: none !important;
+  display: none ;
 }
 body {
-  margin: 0  !important;
+  margin: 0  ;
   padding: 0 ;
   background-color: var(--black) !important;
   font-family: "ig-regular" !important;
-
-}
-
-.wrapper {
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column;
-  margin: 0;
-  margin-bottom: 10rem;
-  padding: 0;
-  width: 100% !important;
-  height: 100% !important;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly !important;
-  background-image: url(../assets/images/nasa-Q1p7bh3SHj8-unsplash.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-attachment:fixed ;
-  box-shadow: 0 3000px rgba(0, 0, 0, 0.657) inset;
-}
-
-.content-box {
-  margin: 10em auto;
-  /* position: relative;
-  top: 4rem; */
-}
-
-.label {
-  display: flex !important;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-left: 60px;
-
-  width: intrinsic; /* Safari/WebKit uses a non-standard name */
-  width: -moz-max-content; /* Firefox/Gecko */
-  width: -webkit-max-content; /* Chrome */
-  width: max-content;
-  background: var(--blue);
   color: var(--white);
-  /* transform: skewX(20deg); */
-  text-transform: none;
+  background-position: center;
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-image: url(../assets/images/photo-1451187580459-43490279c0fa.jpeg);
+
 }
 
-.label h1 {
-  padding: 12px;
-  font-size: 4rem;
-}
+.top-container{
 
-.content {
-  margin-left: 60px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding-left: 12px;
-  border-left: solid;
-  border-color: var(--blue);
-}
+  /* height: 100%;  */
 
-.content h2 {
-  color: var(--greenu);
-}
-
-.content h3 {
-  color: var(--white);
-}
-
-.content span {
-  font-weight: bolder;
-}
-
-.content p {
-  color: var(--white);
-  font-weight: bolder;
-  background: rgba(211, 219, 215, 0.397);
-  width: intrinsic; /* Safari/WebKit uses a non-standard name */
-  width: -moz-max-content; /* Firefox/Gecko */
-  width: -webkit-max-content; /* Chrome */
-  width: max-content;
-}
-
-.wrap {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20rem;
-}
-
-.register {
-  border: solid;
-  border-color: var(--blue);
-  padding: 20px;
-  margin-top: 10px;
-  width: intrinsic; /* Safari/WebKit uses a non-standard name */
-  width: -moz-max-content; /* Firefox/Gecko */
-  width: -webkit-max-content; /* Chrome */
-  width: max-content;
-}
-
-.register a {
-  font-size: 2rem;
-  color: var(--white);
-}
-
-.register:hover {
-  transform: scale(0.8);
-  transition: transform 0.3s;
-}
-.register a:hover {
-  text-decoration: none;
-  color: var(--greenu);
-}
-.prize {
-  margin-left: 60px;
-  margin-top: 10px;
-  border: solid;
-  padding: 5px;
-  width: intrinsic; /* Safari/WebKit uses a non-standard name */
-  width: -moz-max-content; /* Firefox/Gecko */
-  width: -webkit-max-content; /* Chrome */
-  width: max-content;
-  border-color: var(--blue);
-}
-
-.prize h2 {
-  text-transform: uppercase;
-  color: var(--white);
-}
-
-.prize span {
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: var(--blue);
-}
-
-/* about the hackathon */
-.about h1 {
-  margin-block-start: 1em;
-  margin-inline-start: 2em;
-  text-align: left;
-  color: var(--blue);
-}
-.about > .info-container {
-  width: 50rem;
-  margin-block-start: 1em;
-  margin-inline-start: 5em;
-  text-align: left;
-  color: var(--white);
-}
-
-.about > .info-container p {
-  font-size: 1.5em;
-}
-.about > .info-container span {
-  color: var(--greenu);
-  font-weight: 700;
-}
-
-/* what we offer */
-.offer h1 {
-  margin-block-start: 1em;
-  margin-inline-end: 2em;
   text-align: right;
-  color: var(--blue);
-}
-.offer > .info-container {
-  width: 50rem;
-  margin-block-start: 1em;
-  margin-inline-end: 5em;
-  float: right;
-  right: 30px;
-  color: var(--white);
+  margin-right: 10%;
+  margin-bottom: 20%;
+
 }
 
-.offer > .info-container p {
-  font-size: 1.5em;
+.hackxruas > h1{
+  margin: 5% auto auto auto;
+  font-size: 12vw;
+  fill: none;
+}
+.intro > h1{
+  font-size: 5vw;
   text-align: right;
 }
-.offer > .info-container .green {
+.clg-name > h2{
+  font-size: 2vw;
   color: var(--greenu);
-  font-weight: 700;
 }
-.offer > .info-container .bold {
-  font-weight: 700;
-}
-
-/* why attend HACKxRUAS? */
-.why-attend h1 {
-  margin-block-start: 19rem;
-  margin-inline-start: 2em;
-  text-align: center;
-  color: var(--blue);
-}
-.why-attend > .row {
-  display: flex !important;
-  justify-content: space-evenly !important;
-  flex-wrap: wrap;
-  margin-top: 5em;
-  margin-bottom: 6em;
-}
-
-.why-attend h3 {
+.hack-date{
   color: var(--white);
 }
+.register-btn{
+  font-size: 3vw;
 
-#why-attend img {
-  transition: transform 0.5s;
-}
-#why-attend img:hover {
-  transform: scale(1.2);
-}
 
-/* prizes section */
-.prizes h1 {
-  margin-block-start: 2em;
-  text-align: center;
-  color: var(--blue);
+  /* border: % solid var(--white) !important; */
 }
-.prizes > .row {
-  display: flex !important;
-  justify-content: space-evenly !important;
-  flex-wrap: wrap;
-  margin-top: 5em;
-  margin-bottom: 6em;
-}
-
-.card {
-  width: 20em;
-  display: flex !important;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 5em;
-  background-color: var(--black) !important;
-  transition: transform 0.2s;
-}
-
-#prize:hover,
-#prize:focus {
-  transform: scale(1.2);
-}
-
-.prize-label {
-  margin-bottom: 15px;
-}
-
-#first-prize {
-  background-color: rgba(255, 218, 6, 0.863) !important;
-}
-#second-prize {
-  background-color: rgba(192, 192, 192, 0.829);
-}
-#third-prize {
-  background-color: rgba(205, 128, 50, 0.698);
-}
-
-.prize-label h3 {
-  color: var(--white);
-  font-weight: 900;
-  padding: 12px;
-  padding: 1px 30px;
-}
-
-#prize p {
-  color: var(--white);
-  font-size: 2em;
-  font-weight: bold;
-}
-
-.img-container {
-  width: 7rem;
-  /* padding: 25px auto; */
-}
-
-.card-img-top {
-  width: 100%;
-  height: auto;
-}
-
-.animate-bottom {
-  /* position: relative; */
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-/* RESPONSIVE MEDIA  */
-@media only screen and (max-width: 800px) {
-
-  /* order of prize
-  div#first-prize   {-webkit-order: 1;}
-  div#second-prize  {-webkit-order: 2;}
-  div#third-prize {-webkit-order: 3;}
-  */
+.register-link {
+  border-radius: 5%;
+  margin-bottom: 15% !important;
+  /* background-color: var(--black); */
   
-  div#first-prize   {background-color: aqua; order: 1;}
-  div#prize   {order: 2;}
-  div#prize  {order: 3;}
- 
-
-  /* lander */
-  .wrapper {
-    padding-right: 0;
-    margin-right: 0;
-    margin-bottom: 5rem;
-    padding-top: 3rem;
-  }
-
-  .wrap {
-    margin-bottom: 4rem;
-  }
-  .content-box {
-    margin: 1em auto;
-    /* position: relative;
-        top: 4rem; */
-  }
-
-  .label {
-    align-items: center;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-
-  .label h1 {
-    padding: 12px;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  .label img {
-    width: 30%;
-  }
-
-  .content {
-    margin-left: 10px;
-    width: 15rem !important;
-  }
-
-  .content h2 {
-    color: var(--greenu);
-    font-size: 1.5rem;
-  }
-  .content p {
-    font-size: 0.8rem !important;
-  }
-  .content h3 {
-    color: var(--white);
-    font-size: 0.8em;
-  }
-  .register {
-    border: solid;
-    border-color: var(--blue);
-    padding: 15px;
-    margin-top: 10px;
-    text-align: center;
-    width: intrinsic; /* Safari/WebKit uses a non-standard name */
-    width: -moz-max-content; /* Firefox/Gecko */
-    width: -webkit-max-content; /* Chrome */
-    width: max-content;
-  }
-
-  .register a {
-    font-size: 1rem;
-    color: var(--white);
-  }
-  .prize {
-    margin-left: 15px;
-  }
-
-  .prize h2 {
-    font-size: 1rem;
-  }
-
-  .prize span {
-    font-size: 1.2rem;
-  }
-
-  /* about the hackathon */
-  .about h1 {
-    padding-top: 3rem;
-    font-size: 1.5rem;
-  }
-  .about > .info-container {
-    width: 15rem;
-    margin-block-start: 1em;
-    margin-inline-start: 2.5em;
-    padding-bottom: 2rem;
-    text-align: justify;
-    color: var(--white);
-  }
-
-  .about > .info-container p {
-    font-size: 1rem;
-  }
-
-  /* what we offer */
-  .offer h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .offer > .info-container {
-    width: 15rem;
-    margin-block-start: 0.5rem !important;
-    margin-inline-end: 2.5em;
-    padding-bottom: 2rem;
-    padding-top: 1em;
-    /* float: center; */
-    color: var(--white);
-  }
-
-  .offer > .info-container p {
-    font-size: 1rem;
-    text-align: justify;
-  }
-
-  /* why attend HACKxRUAS? */
-  .why-attend h1 {
-    margin-block-start: 2rem;
-    margin-inline-start: 2rem;
-    margin-inline-end: 1.5rem;
-    padding-left: 4rem;
-    font-size: 1.5rem;
-    text-align: right;
-  }
-  .why-attend > .row {
-    margin-bottom: 3em;
-  }
-
-  /* prizes section */
-  .prizes h1 {
-    margin-block-start: 1em;
-  }
-  .prizes > .row {
-    margin-top: 5em;
-    margin-bottom: 6em;
-  }
-
-  .card {
-    width: 15em;
-  }
-
-  #prize:hover,
-  #prize:focus {
-    transform: scale(1.3);
-  }
-  .img-container {
-    width: 5rem;
-    /* padding: 25px auto; */
-  }
-
-  .card-img-top {
-    width: 60%;
-    height: auto;
-  }
+  /* border: medium solid var(--black); */
+  text-decoration: none !important;
+} 
+.register-link:hover{
+  color: var(--greenu);
 }
+span{
+  color: var(--greenu);
+}
+/* about */
+.about-container , .offer-container{
+  width: 50%;
+  color: var(--white);
+  margin: 7%;
+  line-height: 2;
+  font-size: larger;
+  background-color: var(--black) !important;
+}
+.offer-container{
+  float: left;
+}
+
+h1{
+  color: var(--blue);
+  font-family: "ig-bold";
+}
+
