@@ -332,7 +332,7 @@ body {
 }
 
 /* RESPONSIVE MEDIA  */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   /* lander */
   .wrapper {
     padding-right: 0;
@@ -450,9 +450,10 @@ body {
 
   /* why attend HACKxRUAS? */
   .why-attend h1 {
-    margin-block-start: 1rem;
-    margin-inline-start: 0.5rem;
+    margin-block-start: 2rem;
+    margin-inline-start: 2rem;
     margin-inline-end: 1.5rem;
+    padding-left: 4rem;
     font-size: 1.5rem;
     text-align: right;
   }
