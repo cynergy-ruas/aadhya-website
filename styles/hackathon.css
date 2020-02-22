@@ -187,6 +187,8 @@ span {
   border: none !important;
 }
 .modal-header {
+  color: var(--greenu);
+  font-family: "ig-bold";
   border: none !important;
   background-color: var(--grey);
 }
