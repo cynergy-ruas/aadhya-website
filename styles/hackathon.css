@@ -62,18 +62,20 @@ body {
 }
 
 .imghead h1 {
-  font-size: 12vw;
+  font-size: 12em;
   color: var(--greenu);
   font-family: "ig-bold";
 }
 
 .imghead h2 {
-  font-size: 5vw;
+  font-size: 5em;
   letter-spacing: 10px;
+  color: var(--grey);
+  font-family: "ig-bold";
 }
 
 .imghead h3 {
-  font-size: 2vw;
+  font-size: 2em;
   color: var(--greenu);
 }
 
@@ -82,7 +84,7 @@ body {
   letter-spacing: 5px;
 }
 .register-btn {
-  font-size: 3vw;
+  font-size: 2em;
   /* border: % solid var(--white) !important; */
 }
 
@@ -164,7 +166,6 @@ span {
   color: var(--blue);
   font-family: "ig-bold";
   margin: 5%;
-  font-size: 3em;
 }
 
 .tracks-img {
@@ -228,7 +229,6 @@ span {
 }
 .prize-heading {
   margin: 5%;
-  font-size: 4em;
 }
 .prize-col > h3 {
   padding: 2% 7%;
@@ -252,6 +252,11 @@ span {
   background-color: #c38944;
 }
 
+.future-mobility-img {
+  width: 50%;
+  height: auto;
+}
+
 @media (max-width: 991.98px) {
   .imghead > div > h1 {
     font-size: 3.2em;
@@ -265,6 +270,7 @@ span {
   }
   .register-btn {
     margin-top: 10%;
+    font-size: 1em;
   }
   .register-link {
     padding: 2% 3%;
@@ -295,9 +301,15 @@ span {
     width: 60%;
     height: auto;
   }
+  .future-mobility-img {
+    width: 60%;
+  }
   .modal .tracks-img {
     width: 60%;
     height: auto;
+  }
+  .tracks-heading {
+    text-align: center;
   }
   .track-content {
     margin: 7% 3%;
@@ -306,7 +318,6 @@ span {
     width: 100%;
   }
   .prize-heading {
-    font-size: 4em;
     margin: 5% auto 0 auto;
     text-align: center;
   }
