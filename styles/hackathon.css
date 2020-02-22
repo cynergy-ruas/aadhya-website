@@ -119,6 +119,7 @@ span {
   background-color: #11161a;
   padding: 5% 5% !important;
 }
+
 .green {
   color: var(--greenu);
 }
@@ -154,6 +155,35 @@ span {
 }
 .why-col > img {
   margin-bottom: 6%;
+}
+
+/* trakcs */
+.tracks-heading {
+  color: var(--blue);
+  font-family: "ig-bold";
+  margin: 5%;
+  font-size: 3em;
+}
+.track-details > h2 {
+  margin: 0 8%;
+  color: var(--greenu);
+}
+.track-details > div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+.track-details > div > p {
+  width: 60%;
+  color: var(--white);
+  line-height: 1.8;
+  font-size: 1.2em;
+  margin: 0 3%;
+}
+.track-img {
+  width: 25%;
 }
 
 /* prize */
@@ -226,6 +256,18 @@ span {
   .why-col {
     padding: 8%;
   }
+  .track-details > div {
+    flex-direction: column;
+  }
+  .track-details > div > p {
+    order: 2;
+    width: 98%;
+  }
+  .track-img {
+    width: 60%;
+    height: auto;
+  }
+
   .prize-heading {
     font-size: 4em;
     margin: 5% auto 0 auto;
