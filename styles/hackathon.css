@@ -104,6 +104,12 @@ body {
 span {
   color: var(--greenu);
 }
+.offer-cont > div > h1 {
+  font-size: 3em;
+}
+.about-cont > div > h1 {
+  font-size: 3em;
+}
 
 .row > h1 {
   color: var(--blue);
@@ -111,8 +117,8 @@ span {
   /* font-weight: bold; */
 }
 .row > div {
-  line-height: 1.8;
-  font-size: 1.2em;
+  line-height: 1.5;
+  font-size: 1.5em;
   color: var(--white);
 }
 .about-cont {
@@ -137,6 +143,7 @@ span {
 .why-heading {
   margin: 5%;
   font-family: "ig-bold";
+  font-size: 4em;
 }
 .why-img {
   width: 40%;
@@ -150,7 +157,7 @@ span {
 .why-col > h4 {
   color: var(--greenu);
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .why-col,
 .prize-col {
@@ -169,14 +176,15 @@ span {
 
 .tracks-heading {
   padding-top: 5%;
+  font-size: 4em;
   color: var(--blue);
   font-family: "ig-bold";
   margin: 8%;
 }
 
 .tracks-img {
-  width: fit-content;
-  height: auto;
+  height: 6em;
+  width: auto;
 }
 .tracks-row {
   text-align: center;
@@ -208,7 +216,7 @@ span {
 }
 .modal .tracks-img {
   margin-bottom: 5%;
-  width: 50%;
+  width: 15em;
   height: auto;
 }
 .modal-footer {
@@ -237,6 +245,7 @@ span {
 }
 .prize-heading {
   margin: 8%;
+  font-size: 4em;
 }
 .prize-col > h3 {
   padding: 2% 7%;
@@ -260,11 +269,6 @@ span {
   background-color: #c38944;
 }
 
-.future-mobility-img {
-  width: 50%;
-  height: auto;
-}
-
 @media (max-width: 991.98px) {
   .imghead > div > h1 {
     font-size: 3.2em;
@@ -284,16 +288,24 @@ span {
     padding: 2% 3%;
     font-size: 2em;
   }
+  .about-cont > div > h1 {
+    font-size: calc(2rem + 3.3vw);
+    margin-bottom: 5% !important;
+  }
+
   .offer-cont {
     padding: 10% !important;
   }
   .offer-cont > div > h1 {
     margin: 5% auto 0 auto;
     text-align: center;
+    font-size: calc(2rem + 3.3vw);
+    margin-bottom: 5% !important;
   }
   .why-heading {
     margin: 5% auto 0 auto;
     text-align: center;
+    font-size: calc(2rem + 3.3vw);
   }
   .why-col {
     padding: 8%;
@@ -303,20 +315,19 @@ span {
   }
   .track-details > div > p {
     order: 2;
-    width: 98%;
+    /* width: 98%; */
   }
-  .track-img {
-    width: 60%;
+  .tracks-img {
+    width: 6em;
     height: auto;
   }
-  .future-mobility-img {
-    width: 60%;
-  }
+
   .modal .tracks-img {
     width: 60%;
     height: auto;
   }
   .tracks-heading {
+    font-size: calc(2rem + 3.3vw);
     text-align: center;
   }
   .track-content {
@@ -328,6 +339,7 @@ span {
   .prize-heading {
     margin: 5% auto 0 auto;
     text-align: center;
+    font-size: calc(1.525rem + 3.3vw);
   }
   .prize-col {
     margin: 7%;
