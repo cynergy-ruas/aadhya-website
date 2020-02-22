@@ -168,7 +168,7 @@ span {
 }
 
 .tracks-img {
-  width: 50%;
+  width: fit-content;
   height: auto;
 }
 .tracks-row {
@@ -196,6 +196,11 @@ span {
 }
 .modal-body > p {
   text-align: justify;
+}
+.modal .tracks-img {
+  margin-bottom: 5%;
+  width: 50%;
+  height: auto;
 }
 .modal-footer {
   border: none !important;
@@ -287,6 +292,10 @@ span {
     width: 98%;
   }
   .track-img {
+    width: 60%;
+    height: auto;
+  }
+  .modal .tracks-img {
     width: 60%;
     height: auto;
   }
