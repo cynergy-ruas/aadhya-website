@@ -5,6 +5,7 @@
   --white: #e5e5e5;
   --blue: #1089ff;
   --greenu: #50d890;
+  --grey: #11161a;
 }
 
 @font-face {
@@ -116,8 +117,9 @@ span {
 }
 
 .offer-cont {
-  background-color: #11161a;
+  background-color: var(--grey);
   padding: 5% 5% !important;
+  width: 98%;
 }
 
 .green {
@@ -128,6 +130,8 @@ span {
 }
 .why-section {
   margin-bottom: 8%;
+  width: 100%;
+  /* margin: 0; */
 }
 .why-heading {
   margin: 5%;
@@ -158,6 +162,9 @@ span {
 }
 
 /* trakcs */
+.tracks-section {
+  width: 98%;
+}
 .tracks-heading {
   color: var(--blue);
   font-family: "ig-bold";
@@ -171,6 +178,39 @@ span {
 }
 .tracks-row {
   text-align: center;
+  padding: 2%;
+}
+.tracks-row > div > h2 {
+  color: var(--greenu);
+}
+/* modal */
+.modal {
+  color: var(--white);
+}
+.modal-content {
+  border: none !important;
+}
+.modal-header {
+  border: none !important;
+  background-color: var(--grey);
+}
+.modal-body {
+  border: none !important;
+  background-color: var(--grey);
+  text-align: center;
+}
+.modal-body > p {
+  text-align: justify;
+}
+.modal-footer {
+  border: none !important;
+  background-color: var(--grey);
+}
+.close-btn {
+  background-color: var(--greenu) !important;
+}
+.close-btn:hover {
+  background-color: var(--white) !important;
 }
 
 /* prize */
@@ -184,6 +224,7 @@ span {
 }
 .prize-section {
   margin-bottom: 10%;
+  width: 98%;
 }
 .prize-heading {
   margin: 5%;
@@ -254,7 +295,9 @@ span {
     width: 60%;
     height: auto;
   }
-
+  .prize-section {
+    width: 100%;
+  }
   .prize-heading {
     font-size: 4em;
     margin: 5% auto 0 auto;
