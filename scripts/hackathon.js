@@ -1,5 +1,5 @@
 $(".data-tilt").tilt({
-  scale: 0.8
+  scale: 1.2
 });
 $(function() {
   $('[data-toggle="modal"]').hover(function() {
@@ -7,3 +7,4 @@ $(function() {
     $(modalId).modal("show");
   });
 });
+
