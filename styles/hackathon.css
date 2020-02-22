@@ -162,10 +162,16 @@ span {
   margin-bottom: 6%;
 }
 
+.tracks-section {
+  /* margin: 5%; */
+  background-color: var(--grey);
+}
+
 .tracks-heading {
+  padding-top: 5%;
   color: var(--blue);
   font-family: "ig-bold";
-  margin: 5%;
+  margin: 8%;
 }
 
 .tracks-img {
@@ -230,7 +236,7 @@ span {
   /* width: 98%; */
 }
 .prize-heading {
-  margin: 5%;
+  margin: 8%;
 }
 .prize-col > h3 {
   padding: 2% 7%;
