@@ -1,3 +1,4 @@
+//other functionalities
 $(".data-tilt").tilt({
   scale: 1.2
 });
@@ -7,4 +8,3 @@ $(function() {
     $(modalId).modal("show");
   });
 });
-

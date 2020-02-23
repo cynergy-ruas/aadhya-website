@@ -1,5 +1,4 @@
 /* ASSINGING COLOR VARS AND FONT FAMILY */
-
 :root {
   --black: #070507;
   --white: #e5e5e5;
@@ -81,11 +80,13 @@ body {
 }
 
 .imghead h4 {
+  margin-top: 1em;
   color: var(--white);
   letter-spacing: 5px;
   font-weight: 600;
 }
 .register-btn {
+  margin-top: 2em;
   font-size: 2em;
   /* border: % solid var(--white) !important; */
 }
@@ -105,7 +106,7 @@ body {
   background-color: var(--white);
 }
 
-span {
+.green {
   color: var(--greenu);
 }
 .offer-cont > div > h1 {
@@ -175,11 +176,11 @@ span {
 
 .tracks-section {
   /* margin: 5%; */
-  background-color: var(--grey);
+  background-color: var(--black);
 }
 
 .tracks-heading {
-  padding-top: 5%;
+  margin-top: 4%;
   font-size: 4em;
   color: var(--blue);
   font-family: "ig-bold";
@@ -187,8 +188,9 @@ span {
 }
 
 .tracks-img {
-  height: 6em;
+  height: 100px;
   width: auto;
+  margin-bottom: 6px;
 }
 .tracks-row {
   text-align: center;
@@ -196,6 +198,7 @@ span {
 }
 .tracks-row > div > h2 {
   color: var(--greenu);
+  margin-bottom: 3em;
 }
 /* modal */
 .modal {
@@ -246,9 +249,12 @@ span {
 .prize-section {
   margin-bottom: 10%;
   /* width: 98%; */
+  background: var(--grey);
 }
 .prize-heading {
   margin: 8%;
+  margin-bottom: 4%;
+  margin-top: 4%;
   font-size: 4em;
 }
 .prize-col > h3 {
@@ -262,6 +268,10 @@ span {
 .prize-col > h4 > span {
   font-size: 2.2em;
   font-family: "ig-bold";
+}
+
+.prize-col {
+  margin-bottom: 3em;
 }
 .first-prize {
   background-color: #f9c539;
