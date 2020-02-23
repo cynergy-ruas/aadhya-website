@@ -52,8 +52,8 @@ body {
   padding-bottom: 8rem;
   background: linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.1) 100%
+      rgba(75, 74, 74, 0.267) 0%,
+      rgba(65, 64, 64, 0.164) 100%
     ),
     url("../assets/images/photo-1451187580459-43490279c0fa.jpeg");
   background-position: center center;
@@ -63,25 +63,27 @@ body {
 
 .imghead h1 {
   font-size: 12em;
-  color: var(--greenu);
+  color: var(--blue);
   font-family: "ig-bold";
 }
 
 .imghead h2 {
   font-size: 5em;
   letter-spacing: 10px;
-  color: var(--grey);
+  color: var(--greenu);
   font-family: "ig-bold";
 }
 
 .imghead h3 {
   font-size: 2em;
-  color: var(--greenu);
+  color: var(--white);
+  font-weight: 400;
 }
 
 .imghead h4 {
   color: var(--white);
   letter-spacing: 5px;
+  font-weight: 600;
 }
 .register-btn {
   font-size: 2em;
@@ -91,14 +93,16 @@ body {
 .register-link {
   border-radius: 8%;
   padding: 0.3% 3%;
+  background-color: var(--blue);
   color: var(--white);
   border-style: solid;
+  border-color: transparent;
   text-decoration: none !important;
 }
 
 .register-link:hover {
-  color: var(--black);
-  background-color: var(--greenu);
+  color: var(--blue);
+  background-color: var(--white);
 }
 
 span {
