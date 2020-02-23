@@ -19,6 +19,54 @@
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
 }
 
+/* download buttons */
+
+.flex {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.app-btn {
+  width: 45%;
+  max-width: 160px;
+  color: var(--white);
+  margin: 20px 10px;
+  text-align: left;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "ig-regular";
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.app-btn.blu {
+  /* background-color:; */
+  -webkit-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear;
+}
+.app-btn.blu:hover {
+  background-color: var(--grey);
+}
+.app-btn p {
+  margin: 5px;
+  /* text-align: center; */
+}
+.app-btn i {
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 7px;
+}
+.app-btn .big-txt {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
 /* BACKGROUND */
 *,
 body {

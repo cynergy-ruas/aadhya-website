@@ -79,3 +79,7 @@ linkedin.addEventListener("mouseenter", function() {
 linkedin.addEventListener("mouseleave", function() {
   linkedin_anim.stop();
 });
+// tilt
+$(".data-tilt").tilt({
+  scale: 0.9
+});

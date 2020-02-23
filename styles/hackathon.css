@@ -88,14 +88,17 @@ body {
 .register-btn {
   margin-top: 2em;
   font-size: 2em;
+  transform-style: preserve-3d;
   /* border: % solid var(--white) !important; */
 }
 
 .register-link {
+  transform: translateZ(20px);
   border-radius: 8%;
   padding: 0.3% 3%;
   background-color: var(--blue);
   color: var(--white);
+  font-weight: bold;
   border-style: solid;
   border-color: transparent;
   text-decoration: none !important;
@@ -184,9 +187,12 @@ body {
   font-size: 4em;
   color: var(--blue);
   font-family: "ig-bold";
-  margin: 8%;
+  margin: 8% auto 0 8%;
 }
-
+.tracks-subtitle {
+  margin-left: 8%;
+  color: var(--white);
+}
 .tracks-img {
   height: 100px;
   width: auto;
