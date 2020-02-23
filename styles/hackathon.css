@@ -52,8 +52,8 @@ body {
   padding-bottom: 8rem;
   background: linear-gradient(
       90deg,
-      rgba(75, 74, 74, 0.267) 0%,
-      rgba(65, 64, 64, 0.164) 100%
+      rgba(22, 22, 22, 0.356) 0%,
+      rgba(22, 22, 22, 0.308) 100%
     ),
     url("../assets/images/photo-1451187580459-43490279c0fa.jpeg");
   background-position: center center;
