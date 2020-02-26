@@ -26,6 +26,7 @@ body {
   font-family: "ig-regular";
   background-color: var(--black);
   color: var(--white);
+  margin-bottom: 3em;
 }
 h1 {
   color: var(--blue);
