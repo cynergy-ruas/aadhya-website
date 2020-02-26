@@ -43,7 +43,7 @@ h1 {
 }
 .profile-img {
   /* border-radius: 50%; */
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 
@@ -73,6 +73,13 @@ p {
   animation-name: animatebottom;
   animation-duration: 1s;
 }
+body {
+  overflow-y: hidden;
+}
+.guest-box:hover {
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
 
 @-webkit-keyframes animatebottom {
   from {
@@ -97,7 +104,13 @@ p {
 }
 
 @media (max-width: 991.98px) {
+  .profile-img {
+    width: 80%;
+  }
   .guest-box {
     margin: 3em;
+  }
+  body {
+    overflow-y: auto;
   }
 }
