@@ -79,14 +79,21 @@ body {
   font-family: "ig-regular", Arial, Helvetica, sans-serif;
 }
 .brochure {
-  margin: 5%;
+  border: 1px solid var(--white);
+  /* margin: 5%; */
   cursor: pointer;
 }
-.brochure-download-btn {
-  color: var(--blue);
-  font-size: 2em;
+
+.brochure-btn-content {
+  padding: 0 1em;
+  /* background-color: var(--blue); */
+  color: var(--white);
+  font-size: 1.3em;
 }
-.brochure-download-btn:hover {
+
+.brochure-btn-content:hover {
+  text-decoration: none;
+  /* background-color: var(--white); */
   color: var(--greenu);
 }
 
@@ -107,6 +114,11 @@ body {
   width: 50% !important;
   background-color: var(--black);
   overflow: hidden !important ;
+}
+
+#logo {
+  width: 42em;
+  height: auto;
 }
 
 /* CLOCK ANIMANTION */
@@ -150,6 +162,9 @@ body {
 @media only screen and (max-width: 1620 px) {
   .data-tilt {
     width: 40%;
+  }
+  #logo {
+    width: 100% !important;
   }
 }
 /* REGISTER BUTTON */
@@ -271,8 +286,14 @@ body {
 
 /* RESPONSIVE MEDIA  */
 @media only screen and (max-width: 700px) {
+  html {
+    overflow: hidden;
+  }
   #loadingDiv {
     padding-top: 10em !important;
+  }
+  #logo {
+    width: 100%;
   }
   .audio-btn-container > p {
     font-size: 0.6rem;
