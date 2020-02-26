@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 }
 body {
   font-family: "ig-regular";
-  background-color: var(--grey) !important;
+  background-color: var(--black);
   color: var(--white);
 }
 h1 {
