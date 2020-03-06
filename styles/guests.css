@@ -57,6 +57,10 @@ p {
   margin: 0 auto;
   align-items: center;
 }
+.developer-team {
+  margin-bottom: 5em;
+}
+
 .guest-name {
   padding-top: 10px;
   color: var(--white);
