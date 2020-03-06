@@ -71,20 +71,20 @@
 *,
 body {
   padding: 0;
+
   margin: 0;
-  background-image: url(../assets/images/IMG_20200301_195043.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  /* height: 100vh; */
+  /* background-color: var(--black); */
 }
 body {
-  /* overflow: visible !important; */
+  overflow: hidden !important;
   font-family: "ig-regular";
 }
 
 /* LOADER */
 #loader {
   width: 100%;
+  height: 100vh;
   background: var(--black);
   display: flex;
   justify-content: center;
@@ -104,6 +104,7 @@ body {
 #logo {
   width: 42em;
   height: auto;
+  /* background: transparent; */
 }
 
 /* CLOCK ANIMANTION */
@@ -176,6 +177,8 @@ body {
 .audio {
   z-index: 2 !important;
   margin: auto;
+  background: transparent !important;
+
   padding: 16px 24px 17px;
   border: none;
   outline: none !important;
@@ -199,7 +202,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--black);
+  /* background-color: var(--black); */
 }
 
 .intro img {
@@ -230,7 +233,6 @@ body {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
 
   animation: typing 1.5s steps(40, end), blink-caret 0.5s infinite normal;
 }
@@ -246,8 +248,22 @@ body {
 }
 
 /* Add animation to "page content" */
+#overlay {
+  height: 100vh;
+  width: auto;
+  background-color: var(--black);
+  opacity: 0.7;
+  display: none;
+  position: fixed;
+  z-index: 50000;
+}
 #myDiv {
   display: none;
+  background-image: url(../assets/images/group-img.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 .animate-bottom {
   position: relative;
@@ -287,6 +303,11 @@ body {
   #loadingDiv {
     padding-top: 10em !important;
   }
+  #myDiv {
+    background: url(../assets/images/group-img.jpeg) no-repeat center center
+      fixed;
+  }
+
   #logo {
     width: 100%;
   }
@@ -309,6 +330,10 @@ body {
 
   .typewriter {
     font-size: 20px;
+    margin: 0 auto;
+  }
+  .small-width {
+    font-size: 13.5px;
   }
   button > span {
     text-decoration: none;
