@@ -1,4 +1,5 @@
 /* ASSINGING COLOR VARS AND FONT FAMILY */
+
 :root {
   --black: #070507;
   --white: #e5e5e5;
@@ -10,10 +11,12 @@
   font-family: ig-regular;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
 }
+
 @font-face {
   font-family: ig-italic;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
 }
+
 @font-face {
   font-family: ig-bold;
   src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
@@ -29,6 +32,7 @@
   -webkit-box-pack: center;
   justify-content: center;
 }
+
 .app-btn {
   width: 45%;
   max-width: 160px;
@@ -42,18 +46,22 @@
   font-size: 12px;
   text-transform: uppercase;
 }
+
 .app-btn.blu {
   /* background-color:; */
   -webkit-transition: background-color 0.25s linear;
   transition: background-color 0.25s linear;
 }
+
 .app-btn.blu:hover {
   background-color: var(--grey);
 }
+
 .app-btn p {
   margin: 5px;
   /* text-align: center; */
 }
+
 .app-btn i {
   width: 20%;
   text-align: center;
@@ -61,6 +69,7 @@
   font-size: 30px;
   margin-right: 7px;
 }
+
 .app-btn .big-txt {
   font-size: 17px;
   text-transform: capitalize;
@@ -68,27 +77,27 @@
 }
 
 /* BACKGROUND */
-*,
-body {
-  padding: 0;
 
+*, body {
+  padding: 0;
   margin: 0;
   /* height: 100vh; */
   /* background-color: var(--black); */
 }
+
 body {
   overflow: hidden !important;
   font-family: "ig-regular";
 }
 
 /* LOADER */
+
 #loader {
   width: 100%;
   height: 100vh;
   background: var(--black);
   display: flex;
   justify-content: center;
-
   /* align-items: center; */
 }
 
@@ -98,7 +107,7 @@ body {
   text-align: center;
   width: 50% !important;
   background-color: var(--black);
-  overflow: hidden !important ;
+  overflow: hidden !important;
 }
 
 #logo {
@@ -108,6 +117,7 @@ body {
 }
 
 /* CLOCK ANIMANTION */
+
 #clockdiv {
   font-family: sans-serif;
   color: #fff;
@@ -117,14 +127,14 @@ body {
   font-size: 30px;
 }
 
-#clockdiv > div {
+#clockdiv>div {
   padding: 10px;
   border-radius: 3px;
   background: var(--black);
   display: inline-block;
 }
 
-#clockdiv div > span {
+#clockdiv div>span {
   padding: 8.5px;
   border-radius: 3px;
   background: var(--black);
@@ -135,7 +145,9 @@ body {
   padding-top: 5px;
   font-size: 16px;
 }
+
 /* CURSOR PARALLEX */
+
 .data-tilt {
   display: flex;
   justify-content: center;
@@ -145,6 +157,7 @@ body {
   transform-style: preserve-3d;
   transform: translateZ(50px);
 }
+
 @media only screen and (max-width: 1620 px) {
   .data-tilt {
     width: 40%;
@@ -153,7 +166,9 @@ body {
     width: 100% !important;
   }
 }
+
 /* REGISTER BUTTON */
+
 .register {
   z-index: 2 !important;
   display: inline-block;
@@ -169,34 +184,41 @@ body {
   text-decoration: none;
   font-family: "ig-regular";
 }
+
 .register:hover {
   background-color: var(--white);
   text-decoration: none;
 }
+
 /* AUDIO BUTTON */
+
 .audio {
   z-index: 2 !important;
   margin: auto;
   background: transparent !important;
-
   padding: 16px 24px 17px;
   border: none;
   outline: none !important;
 }
+
 #audio-btn {
   width: 30px !important;
 }
+
 .audio-btn-container {
   display: flex;
   text-align: center;
   align-items: center;
 }
-.audio-btn-container > p {
+
+.audio-btn-container>p {
   color: var(--white);
   font-family: "ig-regular";
   margin: 2px 0px;
 }
+
 /* LANDING PAGE IMAGES */
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -211,6 +233,7 @@ body {
 }
 
 /* TYPING EFFECT TEXT */
+
 .typewriter {
   display: flex;
   flex-wrap: wrap;
@@ -219,7 +242,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.typewriter > span {
+
+.typewriter>span {
   color: var(--blue);
   background-color: transparent !important;
 }
@@ -230,24 +254,24 @@ body {
   color: var(--white);
   text-align: center;
   font-family: "ig-regular";
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-
-  animation: typing 1.5s steps(40, end), blink-caret 0.5s infinite normal;
+  margin: 0 auto;
 }
+
 .bold {
   font-family: "ig-bold";
 }
+
 .team-href {
   color: var(--greenu) !important;
 }
+
 .team-href:hover {
   text-decoration: none;
   color: var(--blue) !important;
 }
 
 /* Add animation to "page content" */
+
 #overlay {
   height: 100vh;
   width: auto;
@@ -257,6 +281,7 @@ body {
   position: fixed;
   z-index: 50000;
 }
+
 #myDiv {
   display: none;
   background-image: url(../assets/images/group-img.jpeg);
@@ -265,19 +290,37 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
 .animate-bottom {
   position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
+  -webkit-animation: animatebottom 1s;
+  animation: animatebottom 1s;  
+}
+
+.animate-bottom-1 {
+  position: relative;
+  -webkit-animation: animatebottom 1s ease .5s both;
+    animation: animatebottom 1s ease .5s both; 
+}
+
+.animate-bottom-2 {
+  position: relative;
+  -webkit-animation: animatebottom 1s ease 1s both;
+  animation: animatebottom 1s ease 1s both;  
+
+}
+
+.animate-bottom-3 {
+  position: relative;
+  -webkit-animation: animatebottom 1s ease 1.5s both;
+  animation: animatebottom 1s ease 1.5s both; 
 }
 
 @-webkit-keyframes animatebottom {
   from {
     bottom: -100px;
     opacity: 0;
-  }
+}
   to {
     bottom: 0px;
     opacity: 1;
@@ -296,6 +339,7 @@ body {
 }
 
 /* RESPONSIVE MEDIA  */
+
 @media only screen and (max-width: 700px) {
   html {
     overflow: hidden;
@@ -304,14 +348,13 @@ body {
     padding-top: 10em !important;
   }
   #myDiv {
-    background: url(../assets/images/group-img.jpeg) no-repeat center center
-      fixed;
+    background: url(../assets/images/group-img.jpeg) no-repeat center center fixed;
+    background-size: cover;
   }
-
   #logo {
     width: 100%;
   }
-  .audio-btn-container > p {
+  .audio-btn-container>p {
     font-size: 0.6rem;
   }
   .intro {
@@ -327,7 +370,6 @@ body {
     width: 80%;
     height: 20%;
   }
-
   .typewriter {
     font-size: 20px;
     margin: 0 auto;
@@ -335,7 +377,7 @@ body {
   .small-width {
     font-size: 13.5px;
   }
-  button > span {
+  button>span {
     text-decoration: none;
     color: var(--black);
     background-color: var(--white);
@@ -354,16 +396,13 @@ body {
     padding: 5px;
     font-size: 20px;
   }
-
-  #clockdiv > div {
+  #clockdiv>div {
     padding: 5px;
     font-size: 20px;
   }
-
-  #clockdiv div > span {
+  #clockdiv div>span {
     padding: 10px;
   }
-
   .smalltext {
     width: 50%;
     font-size: 15px;

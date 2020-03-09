@@ -31,7 +31,6 @@ h1 {
   font-family: "ig-bold";
   margin: 3% 10%;
 }
-
 .guest-box {
   margin: 0 auto;
   padding: 2%;
@@ -96,5 +95,18 @@ p {
   to {
     bottom: 0;
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .guest-name {
+    font-size: 1em;
+  }
+  .col {
+    max-width: 140px;
+    min-width: 130px;
+  }
+  .guest-box > p {
+    font-size: 1em;
   }
 }
