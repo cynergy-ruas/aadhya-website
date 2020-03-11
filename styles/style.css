@@ -78,7 +78,8 @@
 
 /* BACKGROUND */
 
-*, body {
+*,
+body {
   padding: 0;
   margin: 0;
   /* height: 100vh; */
@@ -127,14 +128,14 @@ body {
   font-size: 30px;
 }
 
-#clockdiv>div {
+#clockdiv > div {
   padding: 10px;
   border-radius: 3px;
   background: var(--black);
   display: inline-block;
 }
 
-#clockdiv div>span {
+#clockdiv div > span {
   padding: 8.5px;
   border-radius: 3px;
   background: var(--black);
@@ -211,7 +212,7 @@ body {
   align-items: center;
 }
 
-.audio-btn-container>p {
+.audio-btn-container > p {
   color: var(--white);
   font-family: "ig-regular";
   margin: 2px 0px;
@@ -243,7 +244,7 @@ body {
   justify-content: center;
 }
 
-.typewriter>span {
+.typewriter > span {
   color: var(--blue);
   background-color: transparent !important;
 }
@@ -294,33 +295,32 @@ body {
 .animate-bottom {
   position: relative;
   -webkit-animation: animatebottom 1s;
-  animation: animatebottom 1s;  
+  animation: animatebottom 1s;
 }
 
 .animate-bottom-1 {
   position: relative;
-  -webkit-animation: animatebottom 1s ease .5s both;
-    animation: animatebottom 1s ease .5s both; 
+  -webkit-animation: animatebottom 1s ease 0.5s both;
+  animation: animatebottom 1s ease 0.5s both;
 }
 
 .animate-bottom-2 {
   position: relative;
   -webkit-animation: animatebottom 1s ease 1s both;
-  animation: animatebottom 1s ease 1s both;  
-
+  animation: animatebottom 1s ease 1s both;
 }
 
 .animate-bottom-3 {
   position: relative;
   -webkit-animation: animatebottom 1s ease 1.5s both;
-  animation: animatebottom 1s ease 1.5s both; 
+  animation: animatebottom 1s ease 1.5s both;
 }
 
 @-webkit-keyframes animatebottom {
   from {
     bottom: -100px;
     opacity: 0;
-}
+  }
   to {
     bottom: 0px;
     opacity: 1;
@@ -341,20 +341,22 @@ body {
 /* RESPONSIVE MEDIA  */
 
 @media only screen and (max-width: 700px) {
-  html {
+  body {
     overflow: hidden;
+    overflow-x: hidden;
   }
   #loadingDiv {
     padding-top: 10em !important;
   }
   #myDiv {
-    background: url(../assets/images/group-img.jpeg) no-repeat center center fixed;
+    background: url(../assets/images/group-img.jpeg) no-repeat center center
+      fixed;
     background-size: cover;
   }
   #logo {
     width: 100%;
   }
-  .audio-btn-container>p {
+  .audio-btn-container > p {
     font-size: 0.6rem;
   }
   .intro {
@@ -377,7 +379,7 @@ body {
   .small-width {
     font-size: 13.5px;
   }
-  button>span {
+  button > span {
     text-decoration: none;
     color: var(--black);
     background-color: var(--white);
@@ -396,11 +398,11 @@ body {
     padding: 5px;
     font-size: 20px;
   }
-  #clockdiv>div {
+  #clockdiv > div {
     padding: 5px;
     font-size: 20px;
   }
-  #clockdiv div>span {
+  #clockdiv div > span {
     padding: 10px;
   }
   .smalltext {
